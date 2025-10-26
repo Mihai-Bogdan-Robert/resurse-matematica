@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="Image.png" alt="Logo" width="200" height="200">
+</p>
+
 # Resurse formule Matematica
 
 Acest repository conține materialele mele originale pentru studiul matematicii,
