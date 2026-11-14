@@ -1,0 +1,30 @@
+\topictitle{\tr{Sisteme de ecuații în $\Z_n$}{Systems of equations in $\Z_n$}{Gleichungssysteme in $\Z_n$}}
+
+\tr{Ex.}{Ex.}{Bsp.}\ (in $\Z_5$):
+\[
+\begin{cases}
+x+\cl3\,y+z=\cl0\\
+x+y+\cl2\,z=\cl4\\
+\cl2\,x+\cl3\,y+\cl2\,z=\cl0
+\end{cases}
+\]
+\[
+\Delta=\begin{vmatrix}\cl1&\cl3&\cl1\\\cl1&\cl1&\cl2\\\cl2&\cl3&\cl2\end{vmatrix}=a,
+\qquad \mt{dacă $\Delta$ este inversabil în $\Z_5$}{if $\Delta$ is invertible in $\Z_5$}{falls $\Delta$ in $\Z_5$ invertierbar ist}
+\]
+\[
+\Delta_x=\begin{vmatrix}\cl0&\cl3&\cl1\\\cl4&\cl1&\cl2\\\cl0&\cl3&\cl2\end{vmatrix}=c,
+\qquad x=c\cdot a^{-1}
+\]
+\[
+\Delta_y=\cdots\qquad \Delta_z=\cdots
+\]
+
+\subsection{\tr{Exemplu rezolvat}{Worked example}{Durchgerechnetes Beispiel}}
+\[
+\Delta=\cl3,\quad \Delta_x=\cl3,\quad \Delta_y=\cl0,\quad \Delta_z=\cl2,\qquad \cl3^{-1}=\cl2
+\]
+\[
+x=\cl3\cdot\cl2=\cl1,\qquad y=\cl0,\qquad z=\cl2\cdot\cl2=\cl4
+\]
+\tr{Verificare}{Check}{Probe}: $\cl1+\cl0+\cl4=\cl0$,\quad $\cl1+\cl0+\cl2\cdot\cl4=\cl4$,\quad $\cl2+\cl0+\cl2\cdot\cl4=\cl0$.

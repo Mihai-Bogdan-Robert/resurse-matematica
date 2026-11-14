@@ -1,0 +1,88 @@
+\topictitle{\tr{Funcția de gradul doi}{The quadratic function}{Die quadratische Funktion}}
+
+\[
+f(x)=ax^2+bx+c,\qquad \Delta=b^2-4ac
+\]
+
+\subsection{\tr{Tabel de semn}{Sign table}{Vorzeichentabelle}}
+\tr{Pentru}{For}{Für}\ $\Delta>0$, $x_1<x_2$:
+\[
+\begin{array}{c|ccccccc}
+x & -\infty & & x_1 & & x_2 & & +\infty\\ \hline
+f(x) & & \mt{semnul lui $a$}{sign of $a$}{Vorzeichen von $a$} & 0 &
+ \mt{semn contrar lui $a$}{opposite sign of $a$}{Vorzeichen von $a$ umgekehrt} & 0 &
+ \mt{semnul lui $a$}{sign of $a$}{Vorzeichen von $a$} &
+\end{array}
+\]
+
+\subsection{\tr{Parabola (vârful)}{The parabola (vertex)}{Die Parabel (Scheitelpunkt)}}
+\[
+V\Bigl(-\frac{b}{2a},\,-\frac{\Delta}{4a}\Bigr)=V(x_v,y_v)
+\]
+
+\subsection{\tr{Valoarea minimă / maximă}{Minimum / maximum value}{Minimum / Maximum}}
+\[
+\begin{aligned}
+a>0&:\ \mt{valoarea minimă}{minimum value}{Minimum}\ -\frac{\Delta}{4a}\quad\mt{pentru}{at}{bei}\ x=-\frac{b}{2a}\\[2pt]
+a<0&:\ \mt{valoarea maximă}{maximum value}{Maximum}\ -\frac{\Delta}{4a}\quad\mt{pentru}{at}{bei}\ x=-\frac{b}{2a}
+\end{aligned}
+\]
+
+\subsection{\tr{Monotonia}{Monotonicity}{Monotonie}}
+\[
+a>0:\ \begin{cases}\text{\tr{strict descrescătoare pe}{strictly decreasing on}{streng monoton fallend auf}}\ \bigl(-\infty,-\tfrac{b}{2a}\bigr]\\[2pt]
+\text{\tr{strict crescătoare pe}{strictly increasing on}{streng monoton steigend auf}}\ \bigl[-\tfrac{b}{2a},\infty\bigr)\end{cases}
+\qquad a<0:\ \mt{invers}{reversed}{umgekehrt}
+\]
+
+\begin{important}
+\tr{Ca funcția să se anuleze într-un singur punct: $\Delta=0$.}{For the function to vanish at exactly one point: $\Delta=0$.}{Damit die Funktion genau eine Nullstelle hat: $\Delta=0$.}
+\end{important}
+
+\subsection{\tr{Familii de parabole (cu parametru)}{Families of parabolas (with a parameter)}{Parabelscharen (mit Parameter)}}
+\begin{itemize}
+\item \tr{Vârfurile parabolelor se află pe:}{The vertices lie on:}{Die Scheitelpunkte liegen auf:}
+  \begin{itemize}[label=$\blacktriangleright$]
+  \item \tr{o dreaptă ($y_v$ este funcție de gradul 1 de $x_v$)}{a line ($y_v$ is a degree-1 function of $x_v$)}{einer Geraden ($y_v$ ist eine Funktion 1.\ Grades von $x_v$)}
+  \item \tr{o parabolă ($y_v$ este funcție de gradul 2 de $x_v$)}{a parabola ($y_v$ is a degree-2 function of $x_v$)}{einer Parabel ($y_v$ ist eine Funktion 2.\ Grades von $x_v$)}
+  \item \tr{prima bisectoare:}{the first bisector:}{der ersten Winkelhalbierenden:}\ $x_v=y_v$
+  \item \tr{a doua bisectoare:}{the second bisector:}{der zweiten Winkelhalbierenden:}\ $x_v=-y_v$
+  \item \tr{dreapta $\dots$ (înlocuim $x$ și $y$ cu $x_v$ și $y_v$)}{a line $\dots$ (replace $x$ and $y$ by $x_v$ and $y_v$)}{einer Geraden $\dots$ ($x$ und $y$ durch $x_v$ und $y_v$ ersetzen)}
+  \end{itemize}
+\item \tr{Curba pe care se găsesc vârfurile: exprimăm parametrul în funcție de $x_v$ și îl înlocuim în ecuația lui $y_v$.}
+        {The curve containing the vertices: express the parameter through $x_v$ and substitute it into the equation of $y_v$.}
+        {Ortskurve der Scheitelpunkte: den Parameter durch $x_v$ ausdrücken und in die Gleichung für $y_v$ einsetzen.}
+\item \tr{Parabolele trec printr-un punct fix (cel puțin unul): scoatem parametrul factor comun și egalăm cu $0$ coeficienții acestuia.}
+        {The parabolas pass through a fixed point (at least one): factor out the parameter and set its coefficients equal to $0$.}
+        {Die Parabeln gehen durch einen Fixpunkt (mindestens einen): den Parameter ausklammern und seine Koeffizienten gleich $0$ setzen.}
+\end{itemize}
+
+\subsection{\tr{Parabolele a două funcții}{Parabolas of two functions}{Parabeln zweier Funktionen}}
+\begin{itemize}[label=$\blacktriangleright$]
+\item \tr{se intersectează în două puncte distincte:}{intersect in two distinct points:}{schneiden sich in zwei verschiedenen Punkten:}
+  $\begin{cases}f(x)=g(x)\\ \Delta_{f-g}>0\end{cases}$
+\item \tr{au un singur punct comun:}{have exactly one common point:}{haben genau einen gemeinsamen Punkt:}
+  $\begin{cases}f(x)=g(x)\\ \Delta_{f-g}=0\end{cases}$
+\end{itemize}
+
+\subsection{\tr{Grafic}{Graph}{Graph}}
+\begin{center}
+\begin{tikzpicture}[scale=1]
+  \begin{scope}
+    \draw[->,gray] (-1.3,0)--(1.4,0); \draw[->,gray] (0,-0.2)--(0,1.5);
+    \draw[thick,accent,domain=-1.1:1.1,smooth,samples=40] plot (\x,{1.2*\x*\x});
+    \node at (0,-0.6) {$a>0$};
+  \end{scope}
+  \begin{scope}[xshift=5cm]
+    \draw[->,gray] (-1.3,0)--(1.4,0); \draw[->,gray] (0,-1.5)--(0,0.2);
+    \draw[thick,accent,domain=-1.1:1.1,smooth,samples=40] plot (\x,{-1.2*\x*\x});
+    \node at (0,0.6) {$a<0$};
+  \end{scope}
+\end{tikzpicture}
+\end{center}
+
+\subsection{\tr{Mărginirea}{Boundedness}{Beschränktheit}}
+\begin{itemize}[label=$\blacktriangleright$]
+\item \tr{Inferior}{Bounded below}{Nach unten beschränkt}\ $\imp\exists\,m\in\R:\ m\le f(x)\ \ \forall x$
+\item \tr{Superior}{Bounded above}{Nach oben beschränkt}\ $\imp\exists\,M\in\R:\ M\ge f(x)\ \ \forall x$
+\end{itemize}

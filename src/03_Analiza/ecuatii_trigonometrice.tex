@@ -1,0 +1,211 @@
+\topictitle{\tr{Ecuații trigonometrice -- formule}{Trigonometric equations -- formulas}{Trigonometrische Gleichungen -- Formeln}}
+
+\section{I.\ \tr{Ecuații fundamentale}{Fundamental equations}{Grundgleichungen}}
+\begin{formulae}
+\item $\sin x=a\ \imp\ x=(-1)^k\arcsin a+k\pi$\quad ($a\in[-1,1]$)
+\item $\cos x=a\ \imp\ x=\pm\arccos a+2k\pi$\quad ($a\in[-1,1]$)
+\item $\tg x=a\ \imp\ x=\arctg a+k\pi$
+\item $\ctg x=a\ \imp\ x=\arcctg a+k\pi$
+\end{formulae}
+\tr{($k\in\Z$ în toate formulele.)}{($k\in\Z$ in all formulas.)}{($k\in\Z$ in allen Formeln.)}
+
+\begin{important}
+\begin{formulae}
+\item $\sin(-x)=-\sin x$,\quad $\sin(\pi-x)=\sin x$
+\item $\cos(-x)=\cos x$,\quad $\cos(\pi-x)=-\cos x$
+\item $\arcsin(-x)=-\arcsin x$
+\item $\arccos(-x)=\pi-\arccos x$
+\item $\arctg(-x)=-\arctg x$
+\item $\arcctg(-x)=\pi-\arcctg x$
+\end{formulae}
+\end{important}
+
+\begin{remark}
+\textbf{\tr{Teorema cosinusului într-un triunghi}{Law of cosines in a triangle}{Kosinussatz im Dreieck}:}\quad
+$\cos A=\dfrac{b^2+c^2-a^2}{2bc}$
+\end{remark}
+\begin{remark}
+\textbf{\tr{Teorema sinusurilor într-un triunghi}{Law of sines in a triangle}{Sinussatz im Dreieck}:}\quad
+$\sin A=\dfrac{a}{2R}$,\quad $R$ -- \tr{raza cercului circumscris triunghiului}{circumradius of the triangle}{Umkreisradius des Dreiecks}
+\end{remark}
+
+\section{II.\ \tr{De forma $\sin f(x)=\sin g(x)$, $\cos f(x)=\cos g(x)$, \dots}{Of the form $\sin f(x)=\sin g(x)$, $\cos f(x)=\cos g(x)$, \dots}{Von der Form $\sin f(x)=\sin g(x)$, $\cos f(x)=\cos g(x)$, \dots}}
+\begin{formulae}
+\item $\sin x=\sin a\ \imp\ x=(-1)^k a+k\pi$
+\item $\cos x=\cos a\ \imp\ x=\pm a+2k\pi$
+\item $\tg x=\tg a\ \imp\ x=a+k\pi$
+\item $\ctg x=\ctg a\ \imp\ x=a+k\pi$
+\end{formulae}
+
+\section{III.\ \tr{Care se reduc la gradul 2 sau 3}{Reducible to degree 2 or 3}{Auf Grad 2 oder 3 zurückführbar}}
+\begin{formulae}
+\item $\cos2x=\cos^2x-\sin^2x=2\cos^2x-1=1-2\sin^2x$
+\item $\sin2x=2\sin x\cos x$
+\item $\sin3x=3\sin x-4\sin^3x$
+\item $\cos3x=4\cos^3x-3\cos x$
+\item $\tg2x=\dfrac{2\tg x}{1-\tg^2x}$
+\item $\tg(x\pm y)=\dfrac{\tg x\pm\tg y}{1\mp\tg x\,\tg y}$
+\item $\ctg x=\dfrac1{\tg x}$
+\item $\tg\bigl(\tfrac\pi2+y\bigr)=-\dfrac1{\tg y}$
+\end{formulae}
+
+\section{IV.\ \tr{Omogene}{Homogeneous}{Homogene Gleichungen}}
+\[
+a\sin^2x+b\sin x\cos x+c\cos^2x=0\qquad\bigl|:\cos^2x
+\]
+\[
+a\tg^2x+b\tg x+c=0\qquad\dots
+\]
+\tr{(se verifică separat cazul $\cos x=0$)}{(check the case $\cos x=0$ separately)}{(den Fall $\cos x=0$ separat prüfen)}
+
+\section{V.\ \tr{Aproape omogene}{Almost homogeneous}{Fast homogene Gleichungen}}
+\[
+a\sin^2x+b\sin x\cos x+c\cos^2x=d
+\]
+\[
+d=d\cdot1=d\,(\sin^2x+\cos^2x)\ \imp\ \mt{ecuație omogenă}{a homogeneous equation}{homogene Gleichung}
+\]
+
+\section{VI.\ \tr{Liniare}{Linear}{Lineare Gleichungen}}
+\[
+a\sin x+b\cos x=c
+\]
+\textbf{M1.}\ \tr{Împărțim cu}{Divide by}{Dividiere durch}\ $\sqrt{a^2+b^2}$.\\
+\textbf{M2.}\ \tr{Substituție tangentă a unghiului pe jumătate:}{Half-angle tangent substitution:}{Halbwinkel-Substitution:}
+\[
+\sin x=\frac{2\tg\frac x2}{1+\tg^2\frac x2}\qquad\cos x=\frac{1-\tg^2\frac x2}{1+\tg^2\frac x2}
+\]
+\begin{important}
+\tr{La M2 verificăm la final dacă $x=(2k+1)\pi$ este soluție:}{With M2, check at the end whether $x=(2k+1)\pi$ is a solution:}{Bei M2 am Ende prüfen, ob $x=(2k+1)\pi$ eine Lösung ist:}
+\quad $\sin(2k+1)\pi=0,\ \cos(2k+1)\pi=-1$
+\end{important}
+
+\section{VII.\ \tr{Simetrice}{Symmetric}{Symmetrische Gleichungen}}
+\[
+a(\sin x+\cos x)+b\sin x\cos x+c=0
+\]
+\[
+\sin x+\cos x=t\quad\bigl|^2\ \imp\ 1+2\sin x\cos x=t^2\ \imp\ \sin x\cos x=\frac{t^2-1}{2},\quad t\in[-\sqrt2,\sqrt2]
+\]
+
+\section{VIII.\ \tr{Care conțin $\sin^{2n}x+\cos^{2n}x$}{Containing $\sin^{2n}x+\cos^{2n}x$}{Mit $\sin^{2n}x+\cos^{2n}x$}}
+\[
+\sin^4x+\cos^4x=1-2\Bigl(\frac{\sin2x}{2}\Bigr)^2\qquad
+\sin^6x+\cos^6x=1-3\Bigl(\frac{\sin2x}{2}\Bigr)^2
+\]
+
+\section{IX.\ \tr{Care conțin pătrate de $\sin$ și $\cos$}{Containing squares of $\sin$ and $\cos$}{Mit Quadraten von $\sin$ und $\cos$}}
+\[
+\sin^2x=\frac{1-\cos2x}{2}\qquad\cos^2x=\frac{1+\cos2x}{2}
+\]
+\[
+\begin{aligned}
+\cos a+\cos b&=2\cos\frac{a+b}{2}\cos\frac{a-b}{2}\\
+\cos a-\cos b&=-2\sin\frac{a+b}{2}\sin\frac{a-b}{2}\\
+\sin a+\sin b&=2\sin\frac{a+b}{2}\cos\frac{a-b}{2}\\
+\sin a-\sin b&=2\sin\frac{a-b}{2}\cos\frac{a+b}{2}
+\end{aligned}
+\]
+
+\section{X.\ \tr{Care conțin produse de $\sin$ și $\cos$}{Containing products of $\sin$ and $\cos$}{Mit Produkten von $\sin$ und $\cos$}}
+\[
+\begin{aligned}
+\sin a\cos b&=\frac{\sin(a+b)+\sin(a-b)}{2}\\
+\cos a\cos b&=\frac{\cos(a+b)+\cos(a-b)}{2}\\
+\sin a\sin b&=\frac{\cos(a-b)-\cos(a+b)}{2}
+\end{aligned}
+\]
+
+\subsection{\tr{Formule de bază}{Basic identities}{Grundlegende Formeln}}
+\begin{formulae}
+\item $\sin(a+b)=\sin a\cos b+\sin b\cos a$
+\item $\sin(a-b)=\sin a\cos b-\sin b\cos a$
+\item $\cos(a+b)=\cos a\cos b-\sin a\sin b$
+\item $\cos(a-b)=\cos a\cos b+\sin a\sin b$
+\item $\sin x=\cos\bigl(\tfrac\pi2-x\bigr)$
+\item $\cos x=\sin\bigl(\tfrac\pi2-x\bigr)$
+\item $\sin^2x+\cos^2x=1$
+\item $\ctg x=\dfrac1{\tg x}$
+\end{formulae}
+
+\subsection{\tr{Suma de sinusuri}{A sum of sines}{Eine Summe von Sinuswerten}}
+\[
+S=\sin x+\sin2x+\sin3x+\dots+\sin nx
+\]
+\begin{itemize}[label=--]
+\item \tr{Înmulțim cu $\sin\frac x2$ (sinus de jumătate din rație):}{Multiply by $\sin\frac x2$ (sine of half the step):}{Mit $\sin\frac x2$ multiplizieren (Sinus des halben Schritts):}
+  $\ \sin\dfrac x2\cdot S=\sin\dfrac x2\sin x+\cdots$
+\item \tr{Scriem cu formula de transformare a produsului în sumă.}{Rewrite with the product-to-sum formula.}{Mit der Produkt-Summen-Formel umschreiben.}
+\item $\dots$ \tr{(termenii se reduc în cascadă)}{(the terms telescope)}{(die Summanden heben sich teleskopartig auf)}
+\end{itemize}
+
+\section{\tr{Funcții trigonometrice inverse}{Inverse trigonometric functions}{Arkusfunktionen}}
+\subsection{$\arcsin$ / $\sin$}
+\[
+\arcsin(-x)=-\arcsin x
+\]
+\begin{center}
+\renewcommand{\arraystretch}{1.7}
+\begin{tabular}{c|ccccc}
+$x$ & $0$ & $\dfrac12$ & $\dfrac{\sqrt2}{2}$ & $\dfrac{\sqrt3}{2}$ & $1$\\ \hline
+$\arcsin x$ & $0$ & $\dfrac\pi6$ & $\dfrac\pi4$ & $\dfrac\pi3$ & $\dfrac\pi2$
+\end{tabular}
+\end{center}
+\[
+\sin:\Bigl[-\frac\pi2,\frac\pi2\Bigr]\to[-1,1]\qquad\arcsin:[-1,1]\to\Bigl[-\frac\pi2,\frac\pi2\Bigr]
+\]
+\[
+\sin(\arcsin x)=x\qquad\arcsin(\sin x)=x\ \ (x\in[-\tfrac\pi2,\tfrac\pi2])
+\]
+
+\subsection{$\arccos$ / $\cos$}
+\[
+\arccos(-x)=\pi-\arccos x
+\]
+\begin{center}
+\renewcommand{\arraystretch}{1.7}
+\begin{tabular}{c|ccccc}
+$x$ & $0$ & $\dfrac12$ & $\dfrac{\sqrt2}{2}$ & $\dfrac{\sqrt3}{2}$ & $1$\\ \hline
+$\arccos x$ & $\dfrac\pi2$ & $\dfrac\pi3$ & $\dfrac\pi4$ & $\dfrac\pi6$ & $0$
+\end{tabular}
+\end{center}
+\[
+\cos:[0,\pi]\to[-1,1]\qquad\arccos:[-1,1]\to[0,\pi]
+\]
+\[
+\cos(\arccos x)=x\qquad\arccos(\cos x)=x\ \ (x\in[0,\pi])
+\]
+
+\subsection{$\arctg$ / $\arcctg$}
+\[
+\lim_{x\to\infty}\arctg x=\frac\pi2\qquad\lim_{x\to-\infty}\arctg x=-\frac\pi2\qquad
+\lim_{x\to\infty}\arcctg x=0\qquad\lim_{x\to-\infty}\arcctg x=\pi
+\]
+
+\subsection{\tr{Teorema medianei}{Median theorem}{Mittelliniensatz}}
+\[
+m_a^{\,2}=\frac{2(b^2+c^2)-a^2}{4}
+\]
+
+\section{\tr{Forma trigonometrică a numerelor complexe}{Trigonometric form of complex numbers}{Trigonometrische Form komplexer Zahlen}}
+\[
+z=r(\cos t+i\sin t)
+\]
+\tr{Din forma algebrică $z=x+iy$ în forma trigonometrică:}{From algebraic form $z=x+iy$ to trigonometric form:}{Von der algebraischen Form $z=x+iy$ zur trigonometrischen Form:}
+\[
+r=\sqrt{x^2+y^2},\qquad t=\arctg\frac yx+k\pi,\quad
+k=\begin{cases}0,& z\ \mt{în cadranul}{in quadrant}{im Quadranten}\ \mathrm{I}\\ 1,& z\ \mt{în cadranele}{in quadrants}{in den Quadranten}\ \mathrm{II},\mathrm{III}\\ 2,& z\ \mt{în cadranul}{in quadrant}{im Quadranten}\ \mathrm{IV}\end{cases}
+\]
+
+\subsection{\tr{Operații cu forma trigonometrică}{Operations in trigonometric form}{Rechnen in trigonometrischer Form}}
+\begin{enumerate}[label=\arabic*.]
+\item \textbf{\tr{Înmulțire}{Multiplication}{Multiplikation}}
+  \[z_1=r_1(\cos t_1+i\sin t_1),\quad z_2=r_2(\cos t_2+i\sin t_2)\]
+  \[z_1\cdot z_2=r_1r_2\bigl[\cos(t_1+t_2)+i\sin(t_1+t_2)\bigr]\]
+\item \textbf{\tr{Inversul}{Inverse}{Kehrwert}}
+  \[\frac1z=\frac1r\bigl(\cos(-t)+i\sin(-t)\bigr)\]
+\item \textbf{\tr{Împărțire}{Division}{Division}}
+  \[\frac{z_1}{z_2}=\frac{r_1}{r_2}\bigl[\cos(t_1-t_2)+i\sin(t_1-t_2)\bigr]\]
+\item \textbf{\tr{Ridicare la putere}{Powers (de Moivre)}{Potenzen (de Moivre)}}
+  \[z^n=r^n\bigl(\cos nt+i\sin nt\bigr)\]
+\end{enumerate}

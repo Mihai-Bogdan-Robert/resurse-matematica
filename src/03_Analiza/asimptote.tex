@@ -1,0 +1,45 @@
+\topictitle{\tr{Asimptote}{Asymptotes}{Asymptoten}}
+
+\tr{Exemplu pentru toate cazurile: $f:(-\infty,0)\cup(1,\infty)\to\R$.}{Running example: $f:(-\infty,0)\cup(1,\infty)\to\R$.}{Beispiel für alle Fälle: $f:(-\infty,0)\cup(1,\infty)\to\R$.}
+
+\section{1.\ \tr{Asimptote verticale}{Vertical asymptotes}{Senkrechte Asymptoten}}
+\tr{Calculăm limitele la capetele \emph{finite} ale domeniului (puncte $\neq\pm\infty$):}{Take the limits at the \emph{finite} endpoints of the domain (points $\ne\pm\infty$):}{Man berechnet die Grenzwerte an den \emph{endlichen} Rändern des Definitionsbereichs (Punkte $\ne\pm\infty$):}
+\[
+\lim_{\substack{x\to0\\x<0}}f(x),\qquad \lim_{\substack{x\to1\\x>1}}f(x)
+\]
+\begin{remark}
+\tr{Dacă limitele sunt $\infty$ sau $-\infty$, atunci dreptele $x=0$, respectiv $x=1$, sunt asimptote verticale (la stânga, respectiv la dreapta).}
+    {If the limits are $\infty$ or $-\infty$, then the lines $x=0$ and $x=1$ are vertical asymptotes (on the left and on the right respectively).}
+    {Sind die Grenzwerte $\infty$ oder $-\infty$, dann sind die Geraden $x=0$ bzw.\ $x=1$ senkrechte Asymptoten (links bzw.\ rechts).}
+\end{remark}
+\tr{Ecuația asimptotei:}{Equation of the asymptote:}{Gleichung der Asymptote:}\quad $x=x_0$
+
+\section{2.\ \tr{Asimptote orizontale}{Horizontal asymptotes}{Waagerechte Asymptoten}}
+\tr{Calculăm limitele la capetele infinite ($\pm\infty$):}{Take the limits at the infinite ends ($\pm\infty$):}{Man berechnet die Grenzwerte im Unendlichen ($\pm\infty$):}
+\[
+\lim_{x\to\infty}f(x),\qquad\lim_{x\to-\infty}f(x)
+\]
+\begin{remark}
+\tr{Dacă limitele sunt finite, atunci $y=\displaystyle\lim_{x\to\infty}f(x)$, respectiv $y=\displaystyle\lim_{x\to-\infty}f(x)$, sunt asimptote orizontale.}
+    {If the limits are finite, then $y=\displaystyle\lim_{x\to\infty}f(x)$ and $y=\displaystyle\lim_{x\to-\infty}f(x)$ respectively are horizontal asymptotes.}
+    {Sind die Grenzwerte endlich, dann sind $y=\displaystyle\lim_{x\to\infty}f(x)$ bzw.\ $y=\displaystyle\lim_{x\to-\infty}f(x)$ waagerechte Asymptoten.}
+\end{remark}
+\tr{Ecuația asimptotei:}{Equation of the asymptote:}{Gleichung der Asymptote:}\quad $y=\displaystyle\lim_{x\to\pm\infty}f(x)$
+
+\begin{important}
+\tr{Dacă există asimptotă orizontală la $+\infty$ (sau $-\infty$), nu există asimptotă oblică de aceeași parte.}
+    {If there is a horizontal asymptote at $+\infty$ (or $-\infty$), there is no oblique asymptote on that side.}
+    {Gibt es bei $+\infty$ (oder $-\infty$) eine waagerechte Asymptote, so gibt es auf dieser Seite keine schräge Asymptote.}
+\end{important}
+
+\section{3.\ \tr{Asimptote oblice}{Oblique asymptotes}{Schräge Asymptoten}}
+\[
+m=\lim_{x\to\infty}\frac{f(x)}{x},\qquad n=\lim_{x\to\infty}\bigl(f(x)-mx\bigr)
+\]
+\begin{remark}
+\tr{Dacă $m\in\R^*$ și $n$ este finit, atunci există asimptotă oblică.}
+    {If $m\in\R^*$ and $n$ is finite, there is an oblique asymptote.}
+    {Ist $m\in\R^*$ und $n$ endlich, so gibt es eine schräge Asymptote.}
+\end{remark}
+\tr{Ecuația asimptotei:}{Equation of the asymptote:}{Gleichung der Asymptote:}\quad $y=mx+n$
+\par\tr{(Analog la $-\infty$.)}{(Analogously at $-\infty$.)}{(Analog bei $-\infty$.)}

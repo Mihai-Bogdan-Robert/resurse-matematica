@@ -1,0 +1,103 @@
+\topictitle{\tr{Matrice}{Matrices}{Matrizen}}
+
+\[
+A=\begin{pmatrix}
+a_{11} & a_{12} & \cdots & a_{1n}\\
+a_{21} & a_{22} & \cdots & a_{2n}\\
+\vdots & \vdots & \ddots & \vdots\\
+a_{m1} & a_{m2} & \cdots & a_{mn}
+\end{pmatrix},\qquad 1\le i\le m,\quad 1\le j\le n
+\]
+
+\begin{enumerate}[label=\arabic*),leftmargin=*]
+\item $m=1 \imp$ \tr{matricea linie}{row matrix}{Zeilenmatrix}:
+  $A=\begin{pmatrix}a_{11}&a_{12}&\cdots&a_{1n}\end{pmatrix}$
+\item $n=1 \imp$ \tr{matricea coloană}{column matrix}{Spaltenmatrix}:
+  $A=\begin{pmatrix}a_{11}\\a_{21}\\\vdots\\a_{m1}\end{pmatrix}$
+\item $m=n \imp$ \tr{matrice pătrată}{square matrix}{quadratische Matrix}
+\end{enumerate}
+
+\subsection{\tr{Adunare}{Addition}{Addition}}
+\[
+0+A=A+0=A \qquad\qquad A+(-A)=-A+A=0
+\]
+
+\subsection{\tr{Înmulțire}{Multiplication}{Multiplikation}}
+\[
+A=\begin{pmatrix}a&b\\c&d\end{pmatrix},\quad
+B=\begin{pmatrix}e&f\\g&h\end{pmatrix},\quad
+A\cdot B=\begin{pmatrix}ae+bg & af+bh\\ ce+dg & cf+dh\end{pmatrix}
+\]
+\[
+A\cdot B\neq B\cdot A \qquad\qquad (A\cdot B)\cdot C=A\cdot(B\cdot C)
+\]
+
+\subsection{\tr{Element neutru}{Identity matrix}{Neutrales Element (Einheitsmatrix)}}
+\[
+I_n=\begin{pmatrix}1&0&\cdots&0\\0&1&\cdots&0\\\vdots&\vdots&\ddots&\vdots\\0&0&\cdots&1\end{pmatrix}
+\qquad\qquad A\cdot I_n=I_n\cdot A=A
+\]
+
+\subsection{\tr{Calculul lui $A^n$}{Computing $A^n$}{Berechnung von $A^n$}}
+\tr{Se calculează $A^1,A^2,A^3,\dots$ până se observă o regulă (apoi se demonstrează prin inducție).}
+   {Compute $A^1,A^2,A^3,\dots$ until a pattern appears (then prove it by induction).}
+   {$A^1,A^2,A^3,\dots$ berechnen, bis eine Regel erkennbar wird (danach per vollständiger Induktion beweisen).}
+\[
+A=\begin{pmatrix}\cos x&\pm\sin x\\ \mp\sin x&\cos x\end{pmatrix}
+\imp
+A^n=\begin{pmatrix}\cos nx&\pm\sin nx\\ \mp\sin nx&\cos nx\end{pmatrix}
+\]
+\tr{Sau cu \textbf{binomul lui Newton}:}{Or with the \textbf{binomial theorem}:}{Oder mit dem \textbf{binomischen Lehrsatz}:}
+\[
+A=I+B \imp A^n=(I+B)^n=\sum_{k=0}^{n}\Comb{n}{k}\,I^{\,n-k}B^{k}
+\]
+
+\subsection{\tr{Relația Cayley–Hamilton}{Cayley–Hamilton theorem}{Satz von Cayley–Hamilton}}
+% TODO(autor): in original apărea și "(Tr X)^2 = -a => Tr X = ± i sqrt(a)" fără context; omis până se clarifică.
+\tr{Pentru $X=\begin{pmatrix}a&b\\c&d\end{pmatrix}$:}{For $X=\begin{pmatrix}a&b\\c&d\end{pmatrix}$:}{Für $X=\begin{pmatrix}a&b\\c&d\end{pmatrix}$:}
+\[
+\Tr(X)=a+d\qquad \det(X)=ad-bc
+\]
+\[
+X^2-\Tr(X)\cdot X+\det(X)\cdot I_2=O_2
+\]
+\tr{Matrici egale au determinanți egali:}{Equal matrices have equal determinants:}{Gleiche Matrizen haben gleiche Determinanten:}
+$A=B\imp\det A=\det B$.
+
+\subsection{\tr{Determinanți}{Determinants}{Determinanten}}
+\begin{enumerate}[label=\arabic*),leftmargin=*]
+\item \tr{De ordin 2:}{Order 2:}{Ordnung 2:}
+\[
+\begin{vmatrix}a&b\\c&d\end{vmatrix}=ad-bc
+\]
+\item \tr{De ordin 3 (regula lui Sarrus):}{Order 3 (rule of Sarrus):}{Ordnung 3 (Regel von Sarrus):}
+\[
+\begin{vmatrix}a&b&c\\d&e&f\\g&h&i\end{vmatrix}
+= aei+bfg+dhc-gec-afh-dbi
+\]
+\item \tr{De ordin $n$:}{Order $n$:}{Ordnung $n$:}
+  \begin{itemize}[leftmargin=14pt]
+  \item \tr{are $\mathbf{n!}$ termeni;}{has $\mathbf{n!}$ terms;}{hat $\mathbf{n!}$ Summanden;}
+  \item \tr{se fac zerouri prin adunarea și scăderea liniilor (L) și coloanelor (C);}
+           {create zeros by adding and subtracting rows (R) and columns (C);}
+           {Nullen erzeugen durch Addition und Subtraktion von Zeilen (Z) und Spalten (S);}
+  \item \tr{dezvoltarea după o linie / o coloană:}{expansion along a row / a column:}{Entwicklung nach einer Zeile / Spalte:}
+  \end{itemize}
+\[
+\begin{vmatrix}
+a_{11}&a_{12}&a_{13}&a_{14}\\
+a_{21}&a_{22}&a_{23}&a_{24}\\
+a_{31}&a_{32}&a_{33}&a_{34}\\
+a_{41}&a_{42}&a_{43}&a_{44}
+\end{vmatrix}
+=\cdots+a_{21}(-1)^{2+1}
+\begin{vmatrix}a_{12}&a_{13}&a_{14}\\a_{32}&a_{33}&a_{34}\\a_{42}&a_{43}&a_{44}\end{vmatrix}
++\cdots
+\]
+\end{enumerate}
+
+\subsection{\tr{Transpusa unei matrice}{Transpose of a matrix}{Transponierte einer Matrix}}
+\[
+A=\begin{pmatrix}a&b&c\\d&e&f\end{pmatrix},\qquad
+\transp{A}=\begin{pmatrix}a&d\\b&e\\c&f\end{pmatrix},\qquad a_{ij}\to a_{ji}
+\]
