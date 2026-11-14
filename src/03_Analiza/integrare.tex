@@ -1,0 +1,90 @@
+\topictitle{\tr{Integrale}{Integrals}{Integrale}}
+
+\[
+F'(x)=f(x)\qquad\qquad F(x)=\int f(x)\,dx
+\]
+\tr{$F$ -- primitiva lui $f$ (antiderivata); $f$ -- derivata lui $F$.}{$F$ -- an antiderivative of $f$; $f$ -- the derivative of $F$.}{$F$ -- Stammfunktion von $f$; $f$ -- Ableitung von $F$.}
+
+\begin{important}
+\tr{O funcție continuă pe un interval $D$ admite primitive. O funcție care admite primitive nu poate avea discontinuități de speța I.}
+    {A function that is continuous on an interval $D$ has antiderivatives. A function with antiderivatives cannot have discontinuities of the first kind.}
+    {Eine auf einem Intervall $D$ stetige Funktion besitzt Stammfunktionen. Eine Funktion mit Stammfunktion kann keine Unstetigkeit 1.\ Art haben.}
+\end{important}
+
+\subsection{1)\ \tr{Integrare prin părți}{Integration by parts}{Partielle Integration}}
+\[
+\int f'(x)\,g(x)\,dx=f(x)\,g(x)-\int f(x)\,g'(x)\,dx
+\]
+\tr{(provine din derivata produsului)}{(it comes from the product rule)}{(folgt aus der Produktregel)}:\quad $(f\cdot g)'=f'\cdot g+f\cdot g'$
+
+\subsection{2)\ \tr{Formule de recurență}{Recurrence formulas}{Rekursionsformeln}}
+\tr{Trebuie să ajungem să scriem $I_n$ în funcție de $I_{n-1}$, $I_{n-2}$, \dots}{We have to express $I_n$ in terms of $I_{n-1}$, $I_{n-2}$, \dots}{Man muss $I_n$ durch $I_{n-1}$, $I_{n-2}$, \dots{} ausdrücken.}
+
+\subsection{3)\ \tr{Integrare prin schimbare de variabilă}{Integration by substitution}{Integration durch Substitution}}
+\tr{Notăm $u=f(x)$ astfel încât $f'(x)$ să apară în integrală, și scriem $I(x)$ în funcție de $u$.}
+    {Let $u=f(x)$ so that $f'(x)$ appears in the integrand, and rewrite $I(x)$ in terms of $u$.}
+    {Man setzt $u=f(x)$ so, dass $f'(x)$ im Integranden auftritt, und schreibt $I(x)$ als Funktion von $u$.}
+\[
+u=f(x)\ \imp\ du=f'(x)\,dx\qquad\qquad x=\varphi(t)\ \imp\ dx=\varphi'(t)\,dt
+\]
+
+\subsection{4)\ \tr{Integrarea funcțiilor raționale oarecare}{Integrating rational functions}{Integration rationaler Funktionen}}
+\tr{Descompunere în fracții simple, de exemplu:}{Partial fractions, for example:}{Partialbruchzerlegung, zum Beispiel:}
+\[
+\frac{3x^2+x+1}{(x-2)^2(2x+1)}=\frac{A}{x-2}+\frac{B}{(x-2)^2}+\frac{C}{2x+1}
+\]
+\tr{Le aflăm mai întâi pe cele cu puterea cea mai mare, $B$ și $C$: se înmulțește cu $(x-2)^2$ (respectiv $2x+1$) și se înlocuiește $x$ cu rădăcina factorului.}
+    {Find first the coefficients of the highest powers, $B$ and $C$: multiply by $(x-2)^2$ (resp.\ $2x+1$) and substitute the root of that factor.}
+    {Zuerst die Koeffizienten der höchsten Potenzen $B$ und $C$ bestimmen: mit $(x-2)^2$ (bzw.\ $2x+1$) multiplizieren und die Nullstelle des Faktors einsetzen.}
+\[
+B=\left.\frac{3x^2+x+1}{2x+1}\right|_{x=2}=\frac{15}{5}=3\qquad(\,(x-2)^2=0\imp x=2\,)
+\]
+
+\subsection{5)\ \tr{Împărțirea polinoamelor}{Polynomial division}{Polynomdivision}}
+\tr{Ex.}{Ex.}{Bsp.}: $f=2x^5-3x^4+7x^3-x+2,\quad g=x^2-x-1$
+\begin{center}
+\renewcommand{\arraystretch}{1.3}
+\begin{tabular}{r@{\ }|@{\ }l}
+$2x^5-3x^4+7x^3+0x^2-x+2$ & $x^2-x-1$\\ \cline{2-2}
+$\underline{-2x^5+2x^4+2x^3}$ & $2x^3-x^2+8x+7$\\
+$\phantom{-2x^5}-x^4+9x^3+0x^2-x+2$ & \\
+$\underline{\phantom{-2x^5}\ x^4-\ x^3-\ x^2}$ & \\
+$\phantom{-2x^5-x^4+{}}8x^3-x^2-x+2$ & \\
+$\underline{\phantom{-2x^5-x^4+{}}-8x^3+8x^2+8x}$ & \\
+$\phantom{-2x^5-x^4+8x^3+{}}7x^2+7x+2$ & \\
+$\underline{\phantom{-2x^5-x^4+8x^3+{}}-7x^2+7x+7}$ & \\
+$\phantom{-2x^5-x^4+8x^3+7x^2+{}}14x+9$ &
+\end{tabular}
+\end{center}
+\[
+f=g\cdot(2x^3-x^2+8x+7)+(14x+9)
+\]
+\begin{itemize}[label=$\blacktriangleright$]
+\item \tr{Ne uităm la puterea cea mai mare a lui $x$ din deîmpărțit.}{Look at the highest power of $x$ in the dividend.}{Auf die höchste Potenz von $x$ im Dividenden achten.}
+\item \tr{Alegem cu ce înmulțim câtul parțial pentru a o elimina.}{Choose the next quotient term that cancels it.}{Den nächsten Quotiententerm so wählen, dass er sie aufhebt.}
+\end{itemize}
+
+\subsection{\tr{Tabel de primitive uzuale}{Table of standard antiderivatives}{Tabelle wichtiger Stammfunktionen}}
+\begin{center}
+\renewcommand{\arraystretch}{1.9}
+\small
+\begin{tabular}{|c|>{\raggedright\arraybackslash}p{6.2cm}|l|}
+\hline
+\textbf{Nr.} & \textbf{\tr{Funcția}{Function}{Funktion}} & \textbf{\tr{Mulțimea primitivelor}{Antiderivatives}{Stammfunktionen}}\\ \hline
+1 & $f:\R\to\R,\ f(x)=x^n,\ n\in\N$ & $\displaystyle\int x^n\,dx=\frac{x^{n+1}}{n+1}+\mathcal C$\\ \hline
+2 & $f:I\to\R,\ f(x)=x^r,\ I\subset(0,\infty),\ r\in\R\setminus\{-1\}$ & $\displaystyle\int x^r\,dx=\frac{x^{r+1}}{r+1}+\mathcal C$\\ \hline
+3 & $f:\R\to\R,\ f(x)=a^x,\ a>0,\ a\ne1$ & $\displaystyle\int a^x\,dx=\frac{a^x}{\ln a}+\mathcal C$\\ \hline
+4 & $f:I\to\R,\ f(x)=\dfrac1x,\ I\subset\R^*$ & $\displaystyle\int\frac1x\,dx=\ln|x|+\mathcal C$\\ \hline
+5 & $f(x)=\dfrac1{x^2-a^2},\ I\subset\R\setminus\{\pm a\},\ a\ne0$ & $\displaystyle\int\frac{dx}{x^2-a^2}=\frac1{2a}\ln\left|\frac{x-a}{x+a}\right|+\mathcal C$\\ \hline
+6 & $f:\R\to\R,\ f(x)=\dfrac1{x^2+a^2},\ a\ne0$ & $\displaystyle\int\frac{dx}{x^2+a^2}=\frac1a\arctg\frac xa+\mathcal C$\\ \hline
+7 & $f:\R\to\R,\ f(x)=\sin x$ & $\displaystyle\int\sin x\,dx=-\cos x+\mathcal C$\\ \hline
+8 & $f:\R\to\R,\ f(x)=\cos x$ & $\displaystyle\int\cos x\,dx=\sin x+\mathcal C$\\ \hline
+9 & $f(x)=\tg x,\ I\subset\R\setminus\bigl\{(2k+1)\tfrac\pi2\mid k\in\Z\bigr\}$ & $\displaystyle\int\tg x\,dx=-\ln|\cos x|+\mathcal C$\\ \hline
+10 & $f(x)=\ctg x,\ I\subset\R\setminus\{k\pi\mid k\in\Z\}$ & $\displaystyle\int\ctg x\,dx=\ln|\sin x|+\mathcal C$\\ \hline
+11 & $f(x)=\dfrac1{\cos^2x},\ I\subset\R\setminus\bigl\{(2k+1)\tfrac\pi2\mid k\in\Z\bigr\}$ & $\displaystyle\int\frac{dx}{\cos^2x}=\tg x+\mathcal C$\\ \hline
+12 & $f(x)=\dfrac1{\sin^2x},\ I\subset\R\setminus\{k\pi\mid k\in\Z\}$ & $\displaystyle\int\frac{dx}{\sin^2x}=-\ctg x+\mathcal C$\\ \hline
+13 & $f(x)=\dfrac1{\sqrt{a^2-x^2}},\ I\subset(-a,a),\ a>0$ & $\displaystyle\int\frac{dx}{\sqrt{a^2-x^2}}=\arcsin\frac xa+\mathcal C$\\ \hline
+14 & $f(x)=\dfrac1{\sqrt{x^2-a^2}},\ I\subset(-\infty,-a)\text{ \tr{sau}{or}{oder} }(a,\infty)$ & $\displaystyle\int\frac{dx}{\sqrt{x^2-a^2}}=\ln\bigl|x+\sqrt{x^2-a^2}\bigr|+\mathcal C$\\ \hline
+15 & $f:\R\to\R,\ f(x)=\dfrac1{\sqrt{x^2+a^2}},\ a\ne0$ & $\displaystyle\int\frac{dx}{\sqrt{x^2+a^2}}=\ln\bigl(x+\sqrt{x^2+a^2}\bigr)+\mathcal C$\\ \hline
+\end{tabular}
+\end{center}

@@ -1,0 +1,65 @@
+\topictitle{\tr{Combinatorică}{Combinatorics}{Kombinatorik}}
+
+\begin{enumerate}[label=\Roman*.,itemsep=0pt]
+\item \tr{Permutări}{Permutations}{Permutationen}
+\item \tr{Aranjamente}{Arrangements}{Variationen}
+\item \tr{Combinări}{Combinations}{Kombinationen}
+\item \tr{Binomul lui Newton}{Binomial theorem}{Binomischer Lehrsatz}
+\end{enumerate}
+
+\section{I.\ \tr{Permutări}{Permutations}{Permutationen}}
+\[
+P_n=n!\qquad\qquad 0!=1
+\]
+
+\section{II.\ \tr{Aranjamente}{Arrangements}{Variationen}}
+\[
+\Arr{n}{k}\qquad (n\ge k)
+\]
+\tr{\textcolor{accent}{ORDONATE} (contează ordinea)}{\textcolor{accent}{ORDERED} (order matters)}{\textcolor{accent}{GEORDNET} (die Reihenfolge zählt)}
+
+\section{III.\ \tr{Combinări}{Combinations}{Kombinationen}}
+\[
+\Comb{n}{k}=\frac{n!}{k!\,(n-k)!}\qquad\Comb{n}{1}=n\qquad\Comb{n}{0}=1
+\]
+\tr{\textcolor{accent}{NEORDONATE} (nu contează ordinea)}{\textcolor{accent}{UNORDERED} (order does not matter)}{\textcolor{accent}{UNGEORDNET} (die Reihenfolge zählt nicht)}
+
+\subsection{\tr{Proprietăți}{Properties}{Eigenschaften}}
+\begin{itemize}
+\item $\Comb{n}{k}=\Comb{n}{n-k}$\quad -- \tr{combinări \textcolor{accent}{complementare}}{\textcolor{accent}{complementary} combinations}{\textcolor{accent}{komplementäre} Kombinationen}
+\item $\Comb{n}{k}=\Comb{n-1}{k}+\Comb{n-1}{k-1}$\quad -- \tr{formula de \textcolor{accent}{recurență}}{\textcolor{accent}{recurrence} formula (Pascal)}{\textcolor{accent}{Rekursionsformel} (Pascal)}
+\item $\Comb{n}{0}+\Comb{n}{1}+\Comb{n}{2}+\dots+\Comb{n}{n}=2^n$
+\item $\Comb{n}{1}+\Comb{n}{2}+\dots+\Comb{n}{n}=2^n-1$
+\item $\Comb{n}{0}+\Comb{n}{2}+\Comb{n}{4}+\dots=\Comb{n}{1}+\Comb{n}{3}+\Comb{n}{5}+\dots=2^{n-1}$
+\item $\Comb{n}{1}+2\Comb{n}{2}+3\Comb{n}{3}+\dots+n\Comb{n}{n}=n\cdot2^{n-1}$
+\item $\Comb{n}{k}=\dfrac nk\cdot\Comb{n-1}{k-1}$
+\end{itemize}
+
+\section{IV.\ \tr{Binomul lui Newton}{Binomial theorem}{Binomischer Lehrsatz}}
+\[
+(a+b)^n=\sum_{k=0}^{n}\Comb{n}{k}\,a^{n-k}\,b^k
+\]
+
+\subsection{\tr{Termenul general}{General term}{Allgemeines Glied}}
+\[
+T_{k+1}=\Comb{n}{k}\,a^{n-k}\,b^k
+\]
+\begin{important}
+\tr{Al treilea termen este $T_3$ (adică $k=2$).}{The third term is $T_3$ (i.e.\ $k=2$).}{Das dritte Glied ist $T_3$ (also $k=2$).}
+\end{important}
+
+\subsection{\tr{Să fie termen \textcolor{accent}{rațional}}{A \textcolor{accent}{rational} term}{Ein \textcolor{accent}{rationales} Glied}}
+\begin{itemize}[label=$\bullet$]
+\item \tr{Scriem $T_{k+1}$.}{Write $T_{k+1}$.}{$T_{k+1}$ aufschreiben.}
+\item \tr{Punem condiții ca exponenții radicalilor (puterea $k$) să fie numere întregi.}{Require the exponents under the radicals to give integer powers.}{Fordere, dass die Wurzelexponenten ganzzahlige Potenzen ergeben.}
+\end{itemize}
+
+\subsection{\tr{Cel mai mare termen al dezvoltării $(a+b)^n$}{The greatest term of the expansion of $(a+b)^n$}{Das größte Glied der Entwicklung von $(a+b)^n$}}
+\[
+\frac{T_{k+2}}{T_{k+1}}=\frac{n-k}{k+1}\cdot\frac ba
+\]
+\begin{itemize}[label=$\bullet$]
+\item \tr{Scriem}{Solve}{Löse}\ $\dfrac{n-k}{k+1}\cdot\dfrac ba>1$ \tr{și aflăm}{and find}{und bestimme}\ $p$:
+  \[k\le p\imp T_{k+2}>T_{k+1}\qquad\qquad k\ge p+1\imp T_{k+2}<T_{k+1}\]
+\item $T_{p+2}$ = \tr{cel mai mare termen}{the greatest term}{das größte Glied}
+\end{itemize}

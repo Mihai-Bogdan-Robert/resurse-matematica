@@ -1,0 +1,122 @@
+\topictitle{\tr{Progresii}{Progressions}{Folgen und Reihen}}
+
+\section{\tr{1. Progresii aritmetice}{1. Arithmetic progressions}{1. Arithmetische Folgen}}
+\[
+a_n=a_{n-1}+r
+\]
+\begin{itemize}
+\item \tr{Termenul general}{General term}{Allgemeines Glied}: $a_n=a_1+(n-1)\cdot r$
+\item \tr{Suma}{Sum}{Summe}: $\dm{S_n=\frac{(a_1+a_n)\cdot n}{2}}$
+\end{itemize}
+\begin{important}
+$1+3+5+\dots+x\imp x=a_n$\quad
+\tr{(ultimul termen al sumei este $a_n$)}{(the last term of the sum is $a_n$)}{(das letzte Glied der Summe ist $a_n$)}
+\end{important}
+\begin{enumerate}[label=\arabic*),leftmargin=*]
+\item $a_1,a_2,a_3$ \tr{în}{in}{in} \AP\ $\iff a_2=\dfrac{a_1+a_3}{2}$
+\item \tr{Ex.}{Ex.}{Bsp.}: \tr{$S_n=\dots$ este suma unei \AP{}? ($n\ge2$)}{is $S_n=\dots$ the sum of an \AP? ($n\ge2$)}{ist $S_n=\dots$ die Summe einer \AP? ($n\ge2$)}
+  \begin{itemize}[label=$\blacktriangleright$]
+  \item \tr{notăm $a_n=S_n-S_{n-1}$}{let $a_n=S_n-S_{n-1}$}{setze $a_n=S_n-S_{n-1}$}
+  \item \tr{scriem $S_n$ în funcție de $n$}{write $S_n$ as a function of $n$}{schreibe $S_n$ als Funktion von $n$}
+  \item \tr{aflăm $a_n$, apoi $a_1$}{find $a_n$, then $a_1$}{bestimme $a_n$, dann $a_1$}
+  \item \tr{verificăm dacă $a_1,a_2,a_3$ sunt în \AP}{check whether $a_1,a_2,a_3$ are in \AP}{prüfe, ob $a_1,a_2,a_3$ eine \AP\ bilden}
+  \item \tr{verificăm dacă $a_n-a_{n-1}$ este constant}{check whether $a_n-a_{n-1}$ is constant}{prüfe, ob $a_n-a_{n-1}$ konstant ist}
+  \end{itemize}
+\item $a_1+a_n=a_2+a_{n-1}=\cdots$
+\end{enumerate}
+
+\section{\tr{Progresii aritmetice -- tipuri de exerciții}{Arithmetic progressions -- exercise types}{Arithmetische Folgen -- Aufgabentypen}}
+\begin{enumerate}[label=\arabic*.,leftmargin=*]
+\item \textit{\tr{„Să se determine primul termen și rația''}{``Find the first term and the common difference''}{„Bestimme das erste Glied und die Differenz``}}\\
+  \tr{Ex.}{Ex.}{Bsp.}: $\begin{cases}a_4-a_2=6\\ a_3+a_1=10\end{cases}$
+  \begin{itemize}[label=$\blacktriangleright$]
+  \item \tr{Se notează fiecare termen cu formula termenului general și apoi se scad sau se adună cele două ecuații.}
+          {Write every term with the general-term formula, then subtract or add the two equations.}
+          {Jedes Glied mit der Formel für das allgemeine Glied schreiben, dann die beiden Gleichungen subtrahieren oder addieren.}
+  \end{itemize}
+\item \textit{\tr{„O progresie aritmetică verifică relațiile''}{``An arithmetic progression satisfies the relations''}{„Eine arithmetische Folge erfüllt die Beziehungen``}}\\
+  \tr{Ex.}{Ex.}{Bsp.}: $\begin{cases}a_3+a_{10}+a_{11}=15\\ a_9\cdot a_{10}\cdot a_{11}=120\end{cases}$
+  \begin{itemize}[label=$\blacktriangleright$]
+  \item \tr{Se notează $a_9$ și $a_{11}$ în funcție de $a_{10}$}{Write $a_9$ and $a_{11}$ in terms of $a_{10}$}{$a_9$ und $a_{11}$ durch $a_{10}$ ausdrücken}
+  \item \tr{Aflăm $r$ și $a_{10}$ și apoi $a_1$}{Find $r$ and $a_{10}$, then $a_1$}{$r$ und $a_{10}$ bestimmen, dann $a_1$}
+  \end{itemize}
+  \textit{\tr{„Calculați suma primilor 20 de termeni''}{``Compute the sum of the first 20 terms''}{„Berechne die Summe der ersten 20 Glieder``}}:
+  \tr{se calculează $S_{20}$ folosind $r$ și $a_1$.}{compute $S_{20}$ using $r$ and $a_1$.}{$S_{20}$ mit $r$ und $a_1$ berechnen.}
+\item \textit{\tr{„Fie $a,b,c$ termeni de rang $l,m,n$ ai unei \AP. Să se calculeze $E=\dots$''}{``Let $a,b,c$ be the terms of rank $l,m,n$ of an \AP. Compute $E=\dots$''}{„Seien $a,b,c$ die Glieder mit Index $l,m,n$ einer \AP. Berechne $E=\dots$``}}\\
+  \tr{Ex.}{Ex.}{Bsp.}: $E=(m-n)a+(n-l)b+(l-m)c$
+  \begin{itemize}[label=$\blacktriangleright$]
+  \item \tr{Se notează $a,b,c$ în funcție de termenul general}{Write $a,b,c$ with the general-term formula}{$a,b,c$ mit der Formel für das allgemeine Glied schreiben}
+  \item \tr{În expresie dăm factor pe $m,n$ și $l$}{In the expression factor out $m,n$ and $l$}{Im Ausdruck $m,n$ und $l$ ausklammern}
+  \item \tr{Înlocuim $a,b,c$ în parantezele din expresie ($\imp E=0$)}{Substitute $a,b,c$ in the brackets ($\imp E=0$)}{$a,b,c$ in den Klammern einsetzen ($\imp E=0$)}
+  \end{itemize}
+\item \textit{\tr{„Pentru ce valori este șirul o progresie aritmetică''}{``For which values is the sequence an arithmetic progression''}{„Für welche Werte ist die Folge eine arithmetische Folge``}}\\
+  \tr{Ex.}{Ex.}{Bsp.}: $S_n=an^3+bn^2+cn+d$
+  \begin{itemize}[label=$\blacktriangleright$]
+  \item \tr{Calculăm $a_n=S_n-S_{n-1}$}{Compute $a_n=S_n-S_{n-1}$}{Berechne $a_n=S_n-S_{n-1}$}
+  \item \tr{Punem condiția ca $a_n-a_{n-1}$ să fie constant (coeficientul lui $n$ să fie $0$)}{Require $a_n-a_{n-1}$ to be constant (the coefficient of $n$ must be $0$)}{Fordere, dass $a_n-a_{n-1}$ konstant ist (der Koeffizient von $n$ muss $0$ sein)}
+  \end{itemize}
+\item \textit{\tr{„Demonstrați că numerele nu pot fi termeni ai unei progresii aritmetice''}{``Prove that the numbers cannot be terms of an arithmetic progression''}{„Zeige, dass die Zahlen keine Glieder einer arithmetischen Folge sein können``}}\\
+  \tr{Ex.}{Ex.}{Bsp.}: $\sqrt3,\ 6,\ \sqrt{35}$
+  \begin{itemize}[label=$\blacktriangleright$]
+  \item \tr{Notăm numerele ca termenii $a_m,a_n,a_k$ ($m,n,k$ naturale)}{Call the numbers $a_m,a_n,a_k$ ($m,n,k$ natural)}{Nenne die Zahlen $a_m,a_n,a_k$ ($m,n,k$ natürlich)}
+  \item \tr{Scădem ecuațiile între ele și apoi le împărțim, ca să obținem o fracție $\in\Q$ egală cu o fracție $\notin\Q$ -- fiind de naturi diferite, egalitatea este imposibilă.}
+          {Subtract the equations from each other and divide, so that a fraction in $\Q$ equals a fraction not in $\Q$ -- being of different nature, this is impossible.}
+          {Die Gleichungen voneinander subtrahieren und dividieren: ein Bruch aus $\Q$ wäre gleich einem Bruch nicht aus $\Q$ -- unmöglich.}
+  \end{itemize}
+\item \textit{\tr{„$(a_n)$ progresie aritmetică, calculați sumele''}{``$(a_n)$ an arithmetic progression, compute the sums''}{„$(a_n)$ arithmetische Folge, berechne die Summen``}}\\
+  \tr{Ex.}{Ex.}{Bsp.}:
+  \[S=a_1a_2+a_2a_3+\dots+a_{n-1}a_n\qquad
+    S=\frac1{a_1a_2}+\frac1{a_2a_3}+\dots+\frac1{a_{n-1}a_n}\qquad
+    S=S_1+S_2+\dots+S_n\]
+  \begin{itemize}[label=$\blacktriangleright$]
+  \item \tr{Notăm $a_na_{n+1}$ ($n\ge2$) ca}{Write $a_na_{n+1}$ ($n\ge2$) as}{Schreibe $a_na_{n+1}$ ($n\ge2$) als}
+    \[a_na_{n+1}=\frac{a_{n-1}a_na_{n+1}-a_na_{n+1}a_{n+2}}{-3r}\qquad(a_{n-1}-a_{n+2}=-3r)\]
+  \item \tr{Notăm $\dfrac1{a_na_{n+1}}$ ($n\ge1$) ca}{Write $\dfrac1{a_na_{n+1}}$ ($n\ge1$) as}{Schreibe $\dfrac1{a_na_{n+1}}$ ($n\ge1$) als}
+    \[\frac1{a_na_{n+1}}=\left(\frac1{a_n}-\frac1{a_{n+1}}\right)\frac1r\]
+  \end{itemize}
+\end{enumerate}
+
+\section{\tr{2. Progresii geometrice}{2. Geometric progressions}{2. Geometrische Folgen}}
+\[
+b_n=b_{n-1}\cdot q
+\]
+\begin{itemize}
+\item \tr{Termenul general}{General term}{Allgemeines Glied}: $b_n=b_1\cdot q^{\,n-1}$
+\item \tr{Suma}{Sum}{Summe}: $\dm{S_n=b_1\cdot\frac{q^n-1}{q-1}}$\quad $(q\neq1)$
+\end{itemize}
+\begin{enumerate}[label=\arabic*),leftmargin=*]
+\item $b_1,b_2,b_3$ \tr{în}{in}{in} \GP\ $\iff b_2^{\,2}=b_1\cdot b_3\ \bigl(|b_2|=\sqrt{b_1\cdot b_3}\bigr)$
+\item \tr{Ex.}{Ex.}{Bsp.}: \tr{$P_n=\dots$ este o \GP? ($n\ge2$)}{is $P_n=\dots$ a \GP? ($n\ge2$)}{ist $P_n=\dots$ eine \GP? ($n\ge2$)}
+  \begin{itemize}[label=$\blacktriangleright$]
+  \item \tr{Notăm $b_n=P_n-P_{n-1}$}{Let $b_n=P_n-P_{n-1}$}{Setze $b_n=P_n-P_{n-1}$}
+  \item \tr{Aflăm $b_n$, apoi $b_1$}{Find $b_n$, then $b_1$}{Bestimme $b_n$, dann $b_1$}
+  \item \tr{Verificăm dacă $b_1,b_2,b_3$ sunt în \GP}{Check whether $b_1,b_2,b_3$ are in \GP}{Prüfe, ob $b_1,b_2,b_3$ eine \GP\ bilden}
+  \item \tr{Verificăm dacă $b_n/b_{n-1}$ este constant}{Check whether $b_n/b_{n-1}$ is constant}{Prüfe, ob $b_n/b_{n-1}$ konstant ist}
+  \end{itemize}
+\item $b_1\cdot b_n=b_2\cdot b_{n-1}=\cdots$
+\item \tr{Ex.}{Ex.}{Bsp.}: $S=\dfrac1a+\dfrac1{a^2}+\dfrac1{a^3}+\dots+\dfrac1{a^n}$\ :\quad
+  \tr{înmulțim cu rația $\tfrac1a$ și scădem:}{multiply by the ratio $\tfrac1a$ and subtract:}{mit dem Quotienten $\tfrac1a$ multiplizieren und subtrahieren:}
+  $\dfrac1a S=\cdots$
+\end{enumerate}
+
+\section{\tr{Progresii geometrice -- tipuri de exerciții}{Geometric progressions -- exercise types}{Geometrische Folgen -- Aufgabentypen}}
+\begin{enumerate}[label=\arabic*.,leftmargin=*]
+\item \textit{\tr{„Să se determine primul termen și rația''}{``Find the first term and the common ratio''}{„Bestimme das erste Glied und den Quotienten``}}\\
+  \tr{Ex.}{Ex.}{Bsp.}: $\begin{cases}b_4-b_2=6\\ b_3-b_1=3\end{cases}$
+  \begin{itemize}[label=$\blacktriangleright$]
+  \item \tr{Se notează fiecare termen cu formula termenului general}{Write every term with the general-term formula}{Jedes Glied mit der Formel für das allgemeine Glied schreiben}
+  \item \tr{Se împart ecuațiile}{Divide the equations}{Die Gleichungen dividieren}
+  \end{itemize}
+\item \textit{\tr{„Fie două progresii, una aritmetică și una geometrică, fiecare cu câte 4 termeni, ai căror termeni de același rang adunați dau sumele $18,18,26,58$. Aflați rația progresiei geometrice''}
+  {``Two progressions, one arithmetic and one geometric, each with 4 terms; adding the terms of the same rank gives $18,18,26,58$. Find the ratio of the geometric progression''}
+  {„Gegeben sind eine arithmetische und eine geometrische Folge mit je 4 Gliedern; die Summen gleicher Indizes sind $18,18,26,58$. Bestimme den Quotienten der geometrischen Folge``}}
+\item \textit{\tr{„Arătați că un șir este progresie geometrică''}{``Show that a sequence is a geometric progression''}{„Zeige, dass eine Folge geometrisch ist``}}\\
+  \tr{Arătăm că $\dfrac{b_{n+1}}{b_n}$ este constant $\forall n\ge1$.}{Show that $\dfrac{b_{n+1}}{b_n}$ is constant $\forall n\ge1$.}{Zeige, dass $\dfrac{b_{n+1}}{b_n}$ für alle $n\ge1$ konstant ist.}
+\end{enumerate}
+
+\subsection{\tr{Inegalitatea Cauchy--Buniakovski--Schwarz}{Cauchy--Bunyakovsky--Schwarz inequality}{Cauchy-Schwarz-Ungleichung}}
+\[
+(a_1^2+a_2^2+\dots+a_n^2)(b_1^2+b_2^2+\dots+b_n^2)\;\ge\;(a_1b_1+a_2b_2+\dots+a_nb_n)^2
+\]
+\tr{Egalitate dacă}{Equality iff}{Gleichheit genau dann, wenn}\quad
+$\dfrac{a_1}{b_1}=\dfrac{a_2}{b_2}=\dots=\dfrac{a_n}{b_n}$

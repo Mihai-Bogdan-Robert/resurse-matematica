@@ -1,0 +1,123 @@
+\topictitle{\tr{Continuitate și derivabilitate}{Continuity and differentiability}{Stetigkeit und Differenzierbarkeit}}
+
+\subsection{\tr{Continuitatea într-un punct}{Continuity at a point}{Stetigkeit in einem Punkt}}
+\[
+\lim_{\substack{x\to x_0\\x>x_0}}f(x)=\lim_{\substack{x\to x_0\\x<x_0}}f(x)=f(x_0)\ \imp\ f\ \mt{continuă în}{is continuous at}{ist stetig in}\ x_0
+\]
+\begin{itemize}[label=$\blacktriangleright$]
+\item \tr{Dacă cele două limite laterale sunt diferite și finite $\imp$ discontinuitate de speța I.}{If the two one-sided limits are different and finite $\imp$ discontinuity of the first kind.}{Sind die beiden einseitigen Grenzwerte verschieden und endlich $\imp$ Sprungstelle (Unstetigkeit 1.\ Art).}
+\item \tr{Dacă una dintre limite este $\infty$ sau nu există $\imp$ discontinuitate de speța a II-a.}{If one of the limits is $\infty$ or does not exist $\imp$ discontinuity of the second kind.}{Ist einer der Grenzwerte $\infty$ oder existiert nicht $\imp$ Unstetigkeit 2.\ Art.}
+\end{itemize}
+
+\subsection{\tr{Continuitatea pe o mulțime}{Continuity on a set}{Stetigkeit auf einer Menge}}
+\[
+f\ \mt{continuă pe}{continuous on}{stetig auf}\ A\iff f\ \mt{continuă în}{continuous at}{stetig in}\ x_0\ \ \forall x_0\in A
+\]
+\begin{important}
+\tr{Toate funcțiile elementare sunt continue pe domeniul lor (inclusiv funcțiile de gradul I și II).}{All elementary functions are continuous on their domain (including degree-1 and degree-2 functions).}{Alle elementaren Funktionen sind auf ihrem Definitionsbereich stetig (auch lineare und quadratische Funktionen).}
+\end{important}
+\[
+f\ \mt{continuă}{continuous}{stetig}\ \imp f\ \mt{are proprietatea lui Darboux}{has the intermediate value (Darboux) property}{hat die Zwischenwerteigenschaft}
+\]
+\[
+f(a)\cdot f(b)<0\ \imp\ \exists\,c\in(a,b):\ f(c)=0\qquad(f\ \mt{continuă pe}{continuous on}{stetig auf}\ [a,b])
+\]
+
+\subsection{\tr{Derivabilitatea într-un punct $x_0$}{Differentiability at $x_0$}{Differenzierbarkeit in $x_0$}}
+\[
+\lim_{\substack{x\to x_0\\x>x_0}}\frac{f(x)-f(x_0)}{x-x_0}\qquad\mt{și}{and}{und}\qquad\lim_{\substack{x\to x_0\\x<x_0}}\frac{f(x)-f(x_0)}{x-x_0}
+\]
+\tr{să existe, să fie \textbf{finite} și egale $\imp$ $f$ este derivabilă în $x_0$.}{exist, be \textbf{finite} and equal $\imp$ $f$ is differentiable at $x_0$.}{existieren, \textbf{endlich} und gleich sein $\imp$ $f$ ist in $x_0$ differenzierbar.}
+
+\tr{Sau (dacă $f$ este continuă în $x_0$):}{Or (if $f$ is continuous at $x_0$):}{Oder (falls $f$ in $x_0$ stetig ist):}
+\[
+\lim_{\substack{x\to x_0\\x>x_0}}f'(x)\qquad\mt{și}{and}{und}\qquad\lim_{\substack{x\to x_0\\x<x_0}}f'(x)
+\]
+\tr{să existe, să fie \textbf{finite} și egale ($f'_s(x_0)=f'_d(x_0)$).}{exist, be \textbf{finite} and equal ($f'_l(x_0)=f'_r(x_0)$).}{existieren, \textbf{endlich} und gleich sein ($f'_-(x_0)=f'_+(x_0)$).}
+
+\subsection{\tr{Teorema lui Lagrange}{Mean value theorem (Lagrange)}{Mittelwertsatz (Lagrange)}}
+\[
+f:[a,b]\to\R,\quad
+\begin{rcases}\text{a)}\ f\ \mt{continuă pe}{continuous on}{stetig auf}\ [a,b]\\ \text{b)}\ f\ \mt{derivabilă pe}{differentiable on}{differenzierbar auf}\ (a,b)\end{rcases}
+\imp\exists\,c\in(a,b):\ f(b)-f(a)=f'(c)\cdot(b-a)
+\]
+
+\subsection{\tr{Derivatele funcțiilor elementare}{Derivatives of elementary functions}{Ableitungen elementarer Funktionen}}
+\begin{formulae}
+\item $c'=0$\quad ($c$ \tr{constantă}{constant}{konstant})
+\item $(x^n)'=n\,x^{n-1}$
+\item $(\sqrt x)'=\dfrac1{2\sqrt x}$
+\item $(\sqrt[n]{x})'=\dfrac1{n\sqrt[n]{x^{n-1}}}$
+\item $(\ln x)'=\dfrac1x$
+\item $(a^x)'=a^x\ln a$,\quad $(e^x)'=e^x$
+\item $\Bigl(\dfrac1x\Bigr)'=-\dfrac1{x^2}$
+\item $(\sin x)'=\cos x$,\quad $(\cos x)'=-\sin x$
+\item $(\tg x)'=\dfrac1{\cos^2x}=1+\tg^2x$
+\item $(\ctg x)'=-\dfrac1{\sin^2x}=-1-\ctg^2x$
+\item $(\arcsin x)'=\dfrac1{\sqrt{1-x^2}}$
+\item $(\arccos x)'=-\dfrac1{\sqrt{1-x^2}}$
+\item $(\arctg x)'=\dfrac1{1+x^2}$
+\item $(\arcctg x)'=-\dfrac1{1+x^2}$
+\end{formulae}
+\begin{description}[leftmargin=0pt,style=nextline]
+\item[\tr{Suma}{Sum}{Summe}] $(f+g)'(x)=f'(x)+g'(x)$
+\item[\tr{Produsul}{Product}{Produkt}] $(f\cdot g)'(x)=f'(x)\,g(x)+f(x)\,g'(x)$
+\item[\tr{Câtul}{Quotient}{Quotient}] $\Bigl(\dfrac fg\Bigr)'(x)=\dfrac{f'(x)\,g(x)-f(x)\,g'(x)}{g^2(x)}$
+\end{description}
+
+\subsection{\tr{Derivate de ordin superior}{Higher-order derivatives}{Höhere Ableitungen}}
+\[
+f',\ f'',\ f''',\ \dots,\ f^{(n)}\qquad f''(x)=\bigl(f'\bigr)'(x)
+\]
+\textbf{\tr{Formula lui Leibniz}{Leibniz formula}{Leibniz-Regel}} \tr{(derivata de ordin $n$ a unui produs)}{(the $n$-th derivative of a product)}{(die $n$-te Ableitung eines Produkts)}
+\[
+(f\cdot g)^{(n)}=\sum_{k=0}^{n}\Comb{n}{k}\,f^{(n-k)}\,g^{(k)}
+\]
+
+\subsection{\tr{Teorema lui Rolle}{Rolle's theorem}{Satz von Rolle}}
+\[
+\left.\begin{aligned}
+&f\ \mt{continuă pe}{continuous on}{stetig auf}\ [a,b]\\
+&f\ \mt{derivabilă pe}{differentiable on}{differenzierbar auf}\ (a,b)\\
+&f(a)=f(b)
+\end{aligned}\right\}\ \imp\ \exists\,c\in(a,b):\ f'(c)=0
+\]
+
+\subsubsection{\tr{Șirul lui Rolle}{Rolle's sequence}{Rolle-Folge}}
+\tr{Se folosește pentru numărarea soluțiilor reale ale unei ecuații de tipul $f(x)=0$. Pași:}{Used to count the real solutions of an equation $f(x)=0$. Steps:}{Dient zum Abzählen der reellen Lösungen einer Gleichung $f(x)=0$. Schritte:}
+\begin{enumerate}[label=\arabic*.]
+\item \tr{se identifică $f$ și $D_f$;}{identify $f$ and $D_f$;}{$f$ und $D_f$ bestimmen;}
+\item \tr{se calculează $f'(x)$ și se stabilește $D_{f'}$;}{compute $f'(x)$ and find $D_{f'}$;}{$f'(x)$ berechnen und $D_{f'}$ bestimmen;}
+\item \tr{se rezolvă $f'(x)=0$ cu soluțiile $x_1,x_2,\dots,x_n$;}{solve $f'(x)=0$ with solutions $x_1,x_2,\dots,x_n$;}{$f'(x)=0$ lösen, Lösungen $x_1,x_2,\dots,x_n$;}
+\item \tr{se calculează $f(x_1),f(x_2),\dots,f(x_n)$ și limitele la capetele lui $D_f$;}{compute $f(x_1),f(x_2),\dots,f(x_n)$ and the limits at the endpoints of $D_f$;}{$f(x_1),f(x_2),\dots,f(x_n)$ und die Grenzwerte an den Rändern von $D_f$ berechnen;}
+\item \tr{se face tabelul cu toate rezultatele de la punctul anterior;}{tabulate all the results of the previous step;}{alle Ergebnisse des vorigen Schritts in einer Tabelle zusammenfassen;}
+\item \tr{se interpretează tabelul:}{interpret the table:}{Tabelle auswerten:}
+  \begin{itemize}[label=$\blacktriangleright$]
+  \item \tr{unde apar două semne alăturate diferite ($-/+$) avem o soluție pe acel interval;}{where two adjacent entries have different signs ($-/+$) there is one solution in that interval;}{wo zwei benachbarte Einträge verschiedene Vorzeichen ($-/+$) haben, liegt dort eine Lösung;}
+  \item \tr{unde în loc de $+/-$ avem $0$, acolo avem o soluție dublă (două soluții egale).}{where there is a $0$ instead of $+/-$ there is a double solution (two equal solutions).}{wo statt $+/-$ eine $0$ steht, liegt eine doppelte Lösung (zwei gleiche Lösungen).}
+  \end{itemize}
+\end{enumerate}
+
+\subsection{\tr{Teorema lui Fermat}{Fermat's theorem}{Satz von Fermat}}
+\[
+f:[a,b]\to\R,\quad x_0\in(a,b)\ \mt{punct de extrem al lui $f$}{an extremum point of $f$}{Extremstelle von $f$},\ f\ \mt{derivabilă în}{differentiable at}{differenzierbar in}\ x_0\ \imp\ f'(x_0)=0
+\]
+\textbf{\tr{Aplicație}{Application}{Anwendung}:}
+\tr{se dă o inegalitate și se cere determinarea unei constante.}{an inequality is given and a constant has to be determined.}{Gegeben ist eine Ungleichung, gesucht ist eine Konstante.}
+\begin{enumerate}[label=\arabic*.]
+\item \tr{Se trece totul într-o parte, se notează cu $f$ și se reformulează ca o problemă de maxim sau minim.}{Move everything to one side, call it $f$ and rephrase it as a maximum/minimum problem.}{Alles auf eine Seite bringen, $f$ nennen und als Maximum-/Minimumproblem umformulieren.}
+\item \tr{Se identifică punctele de extrem.}{Identify the extremum points.}{Die Extremstellen bestimmen.}
+\item \tr{Se aplică teorema lui Fermat ($f'(x_0)=0$ în punctul de extrem).}{Apply Fermat's theorem ($f'(x_0)=0$ at the extremum).}{Satz von Fermat anwenden ($f'(x_0)=0$ an der Extremstelle).}
+\item \tr{Se află constanta.}{Find the constant.}{Die Konstante bestimmen.}
+\end{enumerate}
+
+\subsection{\tr{Rolul derivatei a doua}{The role of the second derivative}{Bedeutung der zweiten Ableitung}}
+\[
+f:[a,b]\to\R,\ a<b,\quad f\ \mt{continuă pe}{continuous on}{stetig auf}\ [a,b],\quad f\ \mt{de două ori derivabilă pe}{twice differentiable on}{zweimal differenzierbar auf}\ (a,b)
+\]
+\[
+\begin{cases}
+f''\ge0\ \imp\ f\ \mt{este \textcolor{accent}{convexă} pe}{is \textcolor{accent}{convex} on}{ist \textcolor{accent}{konvex} auf}\ [a,b]\\
+f''\le0\ \imp\ f\ \mt{este \textcolor{accent}{concavă} pe}{is \textcolor{accent}{concave} on}{ist \textcolor{accent}{konkav} auf}\ [a,b]
+\end{cases}
+\]

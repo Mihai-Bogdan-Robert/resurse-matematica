@@ -1,0 +1,81 @@
+\topictitle{\tr{Numere complexe -- formule}{Complex numbers -- formulas}{Komplexe Zahlen -- Formeln}}
+
+\[
+z=a+bi=(a,b)
+\]
+\tr{Conjugatul}{Conjugate}{Konjugierte}: $\overline{z}=a-bi$
+
+\begin{formulae}
+\item $i^2=-1$
+\item $\overline{z}=z\imp z\in\R$
+\item $z=0\imp a=0,\ b=0$
+\item $\overline{z}=-z\imp z\in i\R$
+\item $z_1=z_2\imp a_1=a_2,\ b_1=b_2$
+\item $\overline{\overline{z}}=z$
+\end{formulae}
+
+\subsection{\tr{Modulul}{Modulus}{Betrag}}
+\[
+|z|=\sqrt{a^2+b^2}\qquad |z|^2=z\cdot\overline{z}\qquad |z|=1\imp\overline{z}=\frac1z
+\]
+
+\subsection{\tr{Conjugatul operațiilor}{Conjugate of sums, products, \dots}{Konjugation und Rechenoperationen}}
+\begin{formulae}
+\item $\overline{z_1+z_2}=\overline{z_1}+\overline{z_2}$
+\item $\overline{z_1-z_2}=\overline{z_1}-\overline{z_2}$
+\item $\overline{z_1\cdot z_2}=\overline{z_1}\cdot\overline{z_2}$
+\item $\overline{\left(\dfrac{z_1}{z_2}\right)}=\dfrac{\overline{z_1}}{\overline{z_2}}$
+\end{formulae}
+\[
+|z_1+z_2|^2+|z_1-z_2|^2=2\bigl(|z_1|^2+|z_2|^2\bigr)
+\qquad
+|z_1+z_2|^2=(z_1+z_2)\,(\overline{z_1}+\overline{z_2})
+\]
+
+\subsection{\tr{Puterile lui $i$}{Powers of $i$}{Potenzen von $i$}}
+\[
+i^{4k}=1,\quad i^{4k+1}=i,\quad i^{4k+2}=-1,\quad i^{4k+3}=-i
+\]
+\[
+\underbrace{i+i^2+i^3+i^4}_{=0}+i^5+\dots+i^{100}=\mathbf{0}
+\qquad
+i\cdot i^2\cdot i^3\cdots i^{100}=i^{1+2+\dots+100}=i^{5050}=\mathbf{-1}
+\]
+
+\subsection{\tr{Ecuația de gradul doi}{Quadratic equation}{Quadratische Gleichung}}
+\[
+\Delta<0\imp x_{1,2}=\frac{-b\pm i\sqrt{-\Delta}}{2a}
+\]
+
+\subsection{\tr{Ecuația de gradul doi cu coeficienți complecși}{Quadratic equation with complex coefficients}{Quadratische Gleichung mit komplexen Koeffizienten}}
+\[
+\Delta=u^2\imp x_{1,2}=\frac{-b\pm u}{2a}
+\]
+\tr{($u$ este o rădăcină pătrată complexă a lui $\Delta$.)}{($u$ is a complex square root of $\Delta$.)}{($u$ ist eine komplexe Quadratwurzel von $\Delta$.)}
+
+\subsection{\tr{Operații cu perechi $(a,b)$}{Operations on pairs $(a,b)$}{Rechnen mit Paaren $(a,b)$}}
+\textbf{\tr{Adunare}{Addition}{Addition}:}\ $(a,b)+(c,d)=(a+c,\,b+d)$
+\begin{itemize}[label=$\blacktriangleright$]
+\item \tr{comutativă}{commutative}{kommutativ}
+\item \tr{asociativă}{associative}{assoziativ}
+\item \tr{element neutru $(0,0)$}{identity $(0,0)$}{neutrales Element $(0,0)$}
+\item \tr{opus}{opposite}{Gegenelement}: $(a,b)+(-a,-b)=(0,0)$
+\end{itemize}
+\textbf{\tr{Înmulțire}{Multiplication}{Multiplikation}:}\ $(a,b)\cdot(c,d)=(ac-bd,\;ad+bc)$
+\begin{itemize}[label=$\blacktriangleright$]
+\item \tr{comutativă}{commutative}{kommutativ}
+\item \tr{asociativă}{associative}{assoziativ}
+\item \tr{element neutru $(1,0)$}{identity $(1,0)$}{neutrales Element $(1,0)$}
+\item \tr{invers}{inverse}{Inverses}: $(a,b)\cdot(a',b')=(1,0)$,\quad
+  $(a',b')=\Bigl(\dfrac{a}{a^2+b^2},\,\dfrac{-b}{a^2+b^2}\Bigr)$,\quad $(a,b)\ne(0,0)$
+\end{itemize}
+
+\subsection{\tr{Rădăcinile de ordin $n$ ale unui număr complex}{$n$-th roots of a complex number}{$n$-te Wurzeln einer komplexen Zahl}}
+\[
+z^n=a=r(\cos t+i\sin t)
+\]
+\[
+z_k=\sqrt[n]{r}\left(\cos\frac{t+2k\pi}{n}+i\sin\frac{t+2k\pi}{n}\right),\qquad k=\rng{0}{n-1}
+\]
+\tr{Exemplu}{Example}{Beispiel}: $z^3=8\imp z_k=2\Bigl(\cos\dfrac{2k\pi}{3}+i\sin\dfrac{2k\pi}{3}\Bigr)$, \;
+$z_0=2,\ z_1=-1+i\sqrt3,\ z_2=-1-i\sqrt3$.

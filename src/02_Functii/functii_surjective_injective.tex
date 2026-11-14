@@ -1,0 +1,42 @@
+\topictitle{\tr{Funcții injective, surjective și bijective}{Injective, surjective and bijective functions}{Injektive, surjektive und bijektive Funktionen}}
+
+\[
+f:A\to B,\qquad A=\mt{domeniu}{domain}{Definitionsmenge},\quad B=\mt{codomeniu}{codomain}{Zielmenge}
+\]
+
+\subsection{I.\ \tr{Injectivitate}{Injectivity}{Injektivität}}
+\textbf{M1.}\ \tr{$f$ este injectivă dacă}{$f$ is injective if}{$f$ ist injektiv, wenn}
+\[
+\forall x_1,x_2\in A:\quad f(x_1)=f(x_2)\imp x_1=x_2\qquad(\iff x_1\ne x_2\imp f(x_1)\ne f(x_2))
+\]
+\tr{Presupunem $f(x_1)=f(x_2)$ și arătăm că $x_1=x_2$. Dacă găsim $x_1\neq x_2$ cu $f(x_1)=f(x_2)$, $f$ nu este injectivă.}
+  {Assume $f(x_1)=f(x_2)$ and show $x_1=x_2$. If we find $x_1\ne x_2$ with $f(x_1)=f(x_2)$, $f$ is not injective.}
+  {Man nimmt $f(x_1)=f(x_2)$ an und zeigt $x_1=x_2$. Findet man $x_1\ne x_2$ mit $f(x_1)=f(x_2)$, ist $f$ nicht injektiv.}
+
+\textbf{M2.}\ \tr{Arătăm că funcția este strict monotonă (cu ajutorul derivatei).}{Show that the function is strictly monotonic (using the derivative).}{Man zeigt, dass die Funktion streng monoton ist (mithilfe der Ableitung).}
+
+\subsection{II.\ \tr{Surjectivitate}{Surjectivity}{Surjektivität}}
+\textbf{M1.}\ \tr{Orice paralelă la $Ox$ dusă printr-un punct al codomeniului taie graficul în \textbf{cel puțin un punct}.}
+  {Every parallel to $Ox$ through a point of the codomain meets the graph in \textbf{at least one point}.}
+  {Jede Parallele zur $x$-Achse durch einen Punkt der Zielmenge schneidet den Graphen in \textbf{mindestens einem Punkt}.}
+
+\textbf{M2.}\ $\forall y\in B\ \exists x\in A:\ f(x)=y$.\quad
+  \tr{Se exprimă $x$ în funcție de $y$ și se verifică dacă îi aparține lui $A$.}{Express $x$ in terms of $y$ and check that it belongs to $A$.}{$x$ durch $y$ ausdrücken und prüfen, ob $x\in A$.}
+
+\textbf{M3.}\ \tr{Facem tabelul cu $x$, $f'(x)$ și $f(x)$. Stabilim $\Imf f$ din tabel, calculând limitele la capete și valorile lui $f$ unde derivata este $0$. Dacă $\Imf f$ este egală cu codomeniul, atunci $f$ este surjectivă.}
+  {Make the table of $x$, $f'(x)$ and $f(x)$. Determine $\Imf f$ from it, using the limits at the endpoints and the values of $f$ where the derivative is $0$. If $\Imf f$ equals the codomain, $f$ is surjective.}
+  {Tabelle mit $x$, $f'(x)$ und $f(x)$ aufstellen. $\Imf f$ aus der Tabelle bestimmen (Grenzwerte an den Rändern, Funktionswerte an Nullstellen von $f'$). Stimmt $\Imf f$ mit der Zielmenge überein, ist $f$ surjektiv.}
+
+\subsection{III.\ \tr{Bijectivitate}{Bijectivity}{Bijektivität}}
+\tr{O funcție este bijectivă dacă este atât injectivă, cât și surjectivă.}{A function is bijective if it is both injective and surjective.}{Eine Funktion ist bijektiv, wenn sie injektiv und surjektiv ist.}
+
+\subsubsection{\tr{Funcții pe ramuri}{Piecewise functions}{Abschnittsweise definierte Funktionen}}
+\[
+f:A\cup B\to C,\qquad f(x)=\begin{cases}f_1(x),&x\in A\\ f_2(x),&x\in B\end{cases}\qquad(A\cap B=\emptyset)
+\]
+\[
+f\ \mt{surjectivă}{surjective}{surjektiv}\iff \Imf f_1\cup\Imf f_2=C
+\]
+\[
+f\ \mt{injectivă}{injective}{injektiv}\iff\begin{cases}f_1,\ f_2\ \mt{injective}{injective}{injektiv}\\ \Imf f_1\cap\Imf f_2=\emptyset\end{cases}
+\]

@@ -1,0 +1,59 @@
+\topictitle{\tr{Ecuații exponențiale -- formule}{Exponential equations -- formulas}{Exponentialgleichungen -- Formeln}}
+
+\begin{enumerate}[label=\Roman*.,leftmargin=*,itemsep=8pt]
+\item \tr{De tipul}{Type}{Typ} $a^{f(x)}+a^{g(x)}=b$:\\
+  \tr{Se dă factor comun $a^{kx}$.}{Factor out the common power $a^{kx}$.}{Gemeinsame Potenz $a^{kx}$ ausklammern.}
+\item \tr{De tipul}{Type}{Typ} $a^{f(x)}=b$:\quad $\imp f(x)=\log_a b$
+\item \tr{De tipul}{Type}{Typ} $A\,a^{2f(x)}+B\,a^{f(x)}+C=0$:\\
+  \tr{Notăm}{Let}{Setze} $a^{f(x)}=t,\ t>0$ \quad$\imp$\quad $At^2+Bt+C=0\ \dots$
+\item \tr{De tipul}{Type}{Typ} $A\,a^{2f(x)}+B\,(ab)^{f(x)}+C\,b^{2f(x)}=0$:\\
+  \tr{Împărțim cu}{Divide by}{Dividiere durch} $b^{2f(x)}$:\quad
+  $A\bigl(\tfrac ab\bigr)^{2f(x)}+B\bigl(\tfrac ab\bigr)^{f(x)}+C=0$;\quad
+  \tr{notăm}{let}{setze} $\bigl(\tfrac ab\bigr)^{f(x)}=t,\ t>0$ $\dots$
+\item \tr{De tipul}{Type}{Typ} $A\bigl(a+b\sqrt d\bigr)^{f(x)}+B\bigl(a-b\sqrt d\bigr)^{f(x)}=C$:\\
+  $\bigl(a+b\sqrt d\bigr)\bigl(a-b\sqrt d\bigr)=1$;\quad
+  \tr{notăm}{let}{setze} $\bigl(a+b\sqrt d\bigr)^{f(x)}=t,\ t>0$ $\imp\bigl(a-b\sqrt d\bigr)^{f(x)}=\dfrac1t$ $\dots$
+\item \tr{Ecuații cu descompunere în factori.}{Equations solved by factoring.}{Gleichungen, die man durch Faktorisieren löst.}
+\item \tr{De tipul}{Type}{Typ} $f(x)^{g(x)}=f(x)^{h(x)}$:
+  \begin{enumerate}[label=\arabic*),leftmargin=*,itemsep=1pt]
+  \item $g(x)=h(x),\ f(x)>0$
+  \item $f(x)=1$
+  \item $f(x)=0,\ g(x)>0,\ h(x)>0$
+  \item $f(x)=-1$\quad (\tr{cu verificare!}{check the solutions!}{mit Probe!})
+  \end{enumerate}
+\item \tr{Ecuații cu soluție unică:}{Equations with a unique solution:}{Gleichungen mit genau einer Lösung:}
+  \begin{itemize}[label=--,itemsep=1pt]
+  \item \tr{verificăm să nu existe termeni cu semn negativ ($-$);}{check that there are no terms with a negative sign ($-$);}{prüfen, dass keine Terme mit negativem Vorzeichen vorkommen ($-$);}
+  \item \tr{aducem exponențialele la același exponent;}{bring the exponentials to the same exponent;}{die Exponentialterme auf denselben Exponenten bringen;}
+  \item \tr{împărțim cu cel mai mare $a^{f(x)}$;}{divide by the largest $a^{f(x)}$;}{durch das größte $a^{f(x)}$ dividieren;}
+  \item \tr{identificăm soluția unică ($x$).}{identify the unique solution ($x$).}{die eindeutige Lösung ($x$) bestimmen.}
+  \end{itemize}
+\end{enumerate}
+
+\subsection{\tr{Trucuri utile}{Useful tricks}{Nützliche Tricks}}
+\begin{important}
+\[
+x^2+x+1=0\ \imp\ x^3-1=(x-1)\underbrace{(x^2+x+1)}_{=0}\ \imp\ x^3=1
+\]
+\[
+x^n=\begin{cases}x^0=1,& n=3k+0\\ x^1=x,& n=3k+1\\ x^2,& n=3k+2\end{cases}
+\]
+\end{important}
+\begin{important}
+$e^x\ge x+1\qquad\forall x\in\R$
+\end{important}
+
+\subsection{\tr{Schema lui Horner}{Horner's scheme}{Horner-Schema}}
+\tr{(pentru polinoame de grad $\ge3$)}{(for polynomials of degree $\ge3$)}{(für Polynome vom Grad $\ge3$)}\quad $ax^3+bx^2+cx+d=0$
+\begin{center}
+\renewcommand{\arraystretch}{1.5}
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+\tr{Valori încercate}{Trial value}{Probierwert} & $x^3$ & $x^2$ & $x^1$ & $x^0$\\ \hline
+ & $a$ & $b$ & $c$ & $d$\\ \hline
+$x_1$ & $a$ & $x_1\cdot a+b$ & $x_1\cdot(x_1a+b)+c$ & \tr{trebuie să dea $0$}{must be $0$}{muss $0$ ergeben}\\ \hline
+\end{tabular}
+\end{center}
+\tr{Primul coeficient se coboară neschimbat; fiecare celălalt = (valoarea încercată $\cdot$ numărul din stânga) + coeficientul de deasupra. Dacă ultimul număr este $0$, $x_1$ este rădăcină.}
+    {The first coefficient is carried down unchanged; each following entry = (trial value $\cdot$ entry to its left) + the coefficient above it. If the last entry is $0$, then $x_1$ is a root.}
+    {Der erste Koeffizient wird unverändert nach unten übernommen; jeder weitere Eintrag = (Probierwert $\cdot$ Eintrag links) + Koeffizient darüber. Ist der letzte Eintrag $0$, so ist $x_1$ eine Nullstelle.}

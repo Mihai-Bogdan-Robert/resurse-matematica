@@ -1,0 +1,61 @@
+\topictitle{\tr{Drepte în plan}{Lines in the plane}{Geraden in der Ebene}}
+
+\tr{Panta unei drepte:}{Slope of a line:}{Steigung einer Geraden:}\quad $m_d=-\dfrac ab$\quad
+\tr{pentru}{for}{für}\ $d:\ ax+by+c=0$
+
+\tr{Ecuația unei drepte:}{Equation of a line:}{Geradengleichung:}
+\[
+d:\ ax+by+c=0\qquad\qquad d:\ y=mx+n\quad(m=\mt{panta}{slope}{Steigung})
+\]
+\[
+d_1\parallel d_2\iff m_{d_1}=m_{d_2}\qquad\qquad d_1\perp d_2\iff m_{d_1}\cdot m_{d_2}=-1
+\]
+
+\begin{enumerate}[label=\arabic*),leftmargin=*,itemsep=6pt]
+\item \textbf{\tr{Ecuația dreptei care trece prin punctele $A(x_A,y_A)$ și $B(x_B,y_B)$}{Line through $A(x_A,y_A)$ and $B(x_B,y_B)$}{Gerade durch $A(x_A,y_A)$ und $B(x_B,y_B)$}}
+  \[AB:\ \frac{x-x_A}{x_B-x_A}=\frac{y-y_A}{y_B-y_A}\qquad m_{AB}=\frac{y_B-y_A}{x_B-x_A}\]
+  \tr{Lungimea segmentului:}{Length of the segment:}{Länge der Strecke:}\quad $AB=\sqrt{(x_B-x_A)^2+(y_B-y_A)^2}$
+\item \textbf{\tr{Ecuația dreptei determinate de un punct $A(x_A,y_A)$ și panta $m_d$}{Line through a point $A(x_A,y_A)$ with slope $m_d$}{Gerade durch einen Punkt $A(x_A,y_A)$ mit Steigung $m_d$}}
+  \[d(A,m_d):\ y-y_A=m_d\,(x-x_A)\]
+\item \textbf{\tr{Centrul de greutate al unui $\triangle ABC$}{Centroid of a triangle $ABC$}{Schwerpunkt eines Dreiecks $ABC$}} \quad $\{G\}$
+  \[x_G=\frac{x_A+x_B+x_C}{3}\qquad y_G=\frac{y_A+y_B+y_C}{3}\]
+\item \textbf{\tr{Mijlocul unui segment $[AB]$}{Midpoint of a segment $[AB]$}{Mittelpunkt einer Strecke $[AB]$}} \quad $\{M\}$
+  \[x_M=\frac{x_A+x_B}{2}\qquad y_M=\frac{y_A+y_B}{2}\]
+\item \textbf{\tr{Intersecția a două drepte}{Intersection of two lines}{Schnittpunkt zweier Geraden}}\quad
+  \tr{se rezolvă sistemul}{solve the system}{das Gleichungssystem lösen}
+  $\begin{cases}d_1:\ a_1x+b_1y+c_1=0\\ d_2:\ a_2x+b_2y+c_2=0\end{cases}$
+\item \textbf{\tr{Distanța de la un punct la o dreaptă}{Distance from a point to a line}{Abstand eines Punktes von einer Geraden}}
+  \[d:\ ax+by+c=0,\quad A(x_A,y_A)\qquad d(A,d)=\frac{|ax_A+by_A+c|}{\sqrt{a^2+b^2}}\]
+\item \textbf{\tr{Simetricul unui punct față de un punct}{Reflection of a point in a point}{Spiegelung eines Punktes an einem Punkt}}
+  \[C=\mathrm{sim}_B A\qquad x_C=2x_B-x_A,\quad y_C=2y_B-y_A\]
+\item \textbf{\tr{Simetricul unui punct față de o dreaptă}{Reflection of a point in a line}{Spiegelung eines Punktes an einer Geraden}}
+  \tr{(se cunosc ecuația dreptei $d$ și coordonatele punctului $A$)}{(the equation of $d$ and the coordinates of $A$ are known)}{(Gleichung von $d$ und Koordinaten von $A$ sind bekannt)}
+  \[B=\mathrm{sim}_d A\]
+  \begin{itemize}[label=--,itemsep=1pt]
+  \item \tr{ecuația dreptei $AM$, perpendiculară pe $d$;}{equation of the line $AM$, perpendicular to $d$;}{Gleichung der Geraden $AM$ senkrecht zu $d$;}
+  \item $\{M\}=d\cap AM$;
+  \item $M=\text{\tr{mijlocul lui}{midpoint of}{Mittelpunkt von}}\ [AB]$.
+  \end{itemize}
+\item \textbf{\tr{Simetricul unei drepte față de un punct}{Reflection of a line in a point}{Spiegelung einer Geraden an einem Punkt}}
+  \tr{(se cunosc ecuația dreptei $d$ și coordonatele punctului $A$)}{(the equation of $d$ and the coordinates of $A$ are known)}{(Gleichung von $d$ und Koordinaten von $A$ sind bekannt)}
+  \[d'=\mathrm{sim}_A d\]
+  \begin{itemize}[label=--,itemsep=1pt]
+  \item \tr{alegem $B(x_B,y_B)\in d$;}{choose $B(x_B,y_B)\in d$;}{wähle $B(x_B,y_B)\in d$;}
+  \item \tr{determinăm $C=\mathrm{sim}_A B$;}{find $C=\mathrm{sim}_A B$;}{bestimme $C=\mathrm{sim}_A B$;}
+  \item $m_{d'}=m_d$\ ($d'\parallel d$);
+  \item \tr{scriem ecuația lui $d'$ (cu ajutorul lui $C$ și $m_{d'}$).}{write the equation of $d'$ (using $C$ and $m_{d'}$).}{Gleichung von $d'$ aufstellen (mit $C$ und $m_{d'}$).}
+  \end{itemize}
+\item \textbf{\tr{Simetricul unei drepte față de o dreaptă}{Reflection of a line in a line}{Spiegelung einer Geraden an einer Geraden}}
+  \tr{(se cunosc ecuațiile dreptelor $d$, $d_1$)}{(the equations of $d$, $d_1$ are known)}{(Gleichungen von $d$, $d_1$ sind bekannt)}
+  \[d_2=\mathrm{sim}_d d_1\]
+  \begin{itemize}[label=--,itemsep=1pt]
+  \item \tr{determinăm $\{P\}=d_1\cap d$;}{find $\{P\}=d_1\cap d$;}{bestimme $\{P\}=d_1\cap d$;}
+  \item \tr{alegem $A\in d_1$;}{choose $A\in d_1$;}{wähle $A\in d_1$;}
+  \item \tr{determinăm $A'=\mathrm{sim}_d A$;}{find $A'=\mathrm{sim}_d A$;}{bestimme $A'=\mathrm{sim}_d A$;}
+  \item \tr{scriem ecuația dreptei $PA'$ ($=d_2$).}{write the equation of the line $PA'$ ($=d_2$).}{Gleichung der Geraden $PA'$ ($=d_2$) aufstellen.}
+  \end{itemize}
+\item \textbf{\tr{Distanța dintre două drepte paralele $d_1,d_2$}{Distance between two parallel lines $d_1,d_2$}{Abstand zweier paralleler Geraden $d_1,d_2$}}\\
+  \tr{Alegem $M(x_0,y_0)\in d_1$ (să verifice ecuația lui $d_1$), apoi calculăm $d(M,d_2)$.}{Choose $M(x_0,y_0)\in d_1$ (it must satisfy the equation of $d_1$), then compute $d(M,d_2)$.}{Wähle $M(x_0,y_0)\in d_1$ (muss die Gleichung von $d_1$ erfüllen) und berechne $d(M,d_2)$.}
+\item \textbf{\tr{Tangenta unghiului dintre două drepte}{Tangent of the angle between two lines}{Tangens des Winkels zwischen zwei Geraden}}
+  \[\tg\widehat{(d_1,d_2)}=\left|\frac{m_1-m_2}{1+m_1m_2}\right|\]
+\end{enumerate}

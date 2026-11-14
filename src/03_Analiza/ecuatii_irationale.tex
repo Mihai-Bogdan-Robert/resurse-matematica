@@ -1,0 +1,36 @@
+\topictitle{\tr{Ecuații iraționale -- formule}{Irrational equations -- formulas}{Wurzelgleichungen -- Formeln}}
+
+$\sqrt[n]{a}$ \tr{este \textbf{definit} pentru $a\ge0$ (dacă $n$ este \textbf{par}).}{is \textbf{defined} for $a\ge0$ (if $n$ is \textbf{even}).}{ist \textbf{definiert} für $a\ge0$ (wenn $n$ \textbf{gerade} ist).}
+
+\begin{formulae}[3]
+\item $\sqrt{a^2}=|a|$
+\item $\sqrt[n]{a\cdot b}=\sqrt[n]a\cdot\sqrt[n]b$
+\item $\sqrt[n]{\dfrac ab}=\dfrac{\sqrt[n]a}{\sqrt[n]b}$
+\item $\sqrt[n]{a^m}=a^{m/n}$
+\item $\sqrt[m]{\sqrt[n]a}=\sqrt[m\cdot n]{a}$
+\item $\bigl(\sqrt[n]a\bigr)^m=\sqrt[n]{a^m}$
+\end{formulae}
+
+\subsection{\tr{Formula radicalilor compuși}{Denesting of radicals}{Verschachtelte Wurzeln auflösen}}
+\[
+\sqrt{a+\sqrt b}=\sqrt{\frac{a+\sqrt{a^2-b}}{2}}+\sqrt{\frac{a-\sqrt{a^2-b}}{2}}
+\]
+\[
+\sqrt{a-\sqrt b}=\sqrt{\frac{a+\sqrt{a^2-b}}{2}}-\sqrt{\frac{a-\sqrt{a^2-b}}{2}}
+\]
+
+\subsection{\tr{Raționalizarea numitorului}{Rationalising the denominator}{Nenner rational machen}}
+\begin{center}
+\renewcommand{\arraystretch}{1.9}
+\begin{tabular}{|c|c|c|c|}
+\hline
+\textbf{\tr{Numitorul}{Denominator}{Nenner}} & \textbf{\tr{Formula utilizată}{Identity used}{Verwendete Formel}} & \textbf{\tr{Amplificăm cu}{Multiply by}{Erweitern mit}} & \textbf{\tr{Numitor după amplificare}{New denominator}{Neuer Nenner}}\\ \hline
+$\sqrt a\pm\sqrt b$ & $x^2-y^2=(x-y)(x+y)$ & $\sqrt a\mp\sqrt b$ & $a-b$\\ \hline
+$\sqrt[n]{a^k}$ & -- & $\sqrt[n]{a^{n-k}}$ & $a$\\ \hline
+$\sqrt[3]a+\sqrt[3]b$ & $x^3+y^3=(x+y)(x^2-xy+y^2)$ & $\sqrt[3]{a^2}-\sqrt[3]{ab}+\sqrt[3]{b^2}$ & $a+b$\\ \hline
+$\sqrt[3]{a^2}-\sqrt[3]{ab}+\sqrt[3]{b^2}$ & $x^3+y^3=(x+y)(x^2-xy+y^2)$ & $\sqrt[3]a+\sqrt[3]b$ & $a+b$\\ \hline
+$\sqrt[3]a-\sqrt[3]b$ & $x^3-y^3=(x-y)(x^2+xy+y^2)$ & $\sqrt[3]{a^2}+\sqrt[3]{ab}+\sqrt[3]{b^2}$ & $a-b$\\ \hline
+$\sqrt[3]{a^2}+\sqrt[3]{ab}+\sqrt[3]{b^2}$ & $x^3-y^3=(x-y)(x^2+xy+y^2)$ & $\sqrt[3]a-\sqrt[3]b$ & $a-b$\\ \hline
+$\sqrt[n]a-\sqrt[n]b$ & \footnotesize$x^n-y^n=(x-y)(x^{n-1}+x^{n-2}y+\dots+y^{n-1})$ & \footnotesize$\sqrt[n]{a^{n-1}}+\dots+\sqrt[n]{b^{n-1}}$ & $a-b$\\ \hline
+\end{tabular}
+\end{center}

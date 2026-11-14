@@ -1,0 +1,111 @@
+% =============================================================================
+% Resurse matematica / Math resources / Mathe-Formelsammlung
+% (c) 2025 Bogdan Mihai Robert -- CC BY-NC-ND 4.0
+%
+% Common preamble. Compile with XeLaTeX; the language is chosen with
+% \def\lang{ro|en|de} before this file is loaded (see build.py).
+% =============================================================================
+\usepackage{etoolbox}
+\ifdefstring{\lang}{ro}{\def\bblang{romanian}}{%
+  \ifdefstring{\lang}{en}{\def\bblang{english}}{\def\bblang{ngerman}}}
+
+\usepackage[a4paper,top=18mm,bottom=20mm,left=18mm,right=18mm]{geometry}
+\usepackage{amsmath,mathtools}
+\usepackage{unicode-math}
+\setmainfont{texgyrepagella}[Extension=.otf,UprightFont=*-regular,BoldFont=*-bold,ItalicFont=*-italic,BoldItalicFont=*-bolditalic]
+\setmathfont{texgyrepagella-math.otf}
+\usepackage[\bblang]{babel}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{enumitem,multicol,array,booktabs,graphicx,cancel}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,calc}
+\usepackage{tcolorbox}
+\tcbuselibrary{skins,breakable}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage[hidelinks,unicode]{hyperref}
+\pdfstringdefDisableCommands{\def\Delta{$\Delta$}\def\pi{$\pi$}}
+
+% ---- colours -----------------------------------------------------------------
+\definecolor{accent}{HTML}{1F4E79}
+\definecolor{warn}{HTML}{B03A2E}
+\definecolor{soft}{HTML}{EEF3F8}
+
+% ---- translation switch: \tr{romana}{english}{deutsch} ----------------------
+% (defined per language, so that it stays fully expandable, e.g. inside the table of contents)
+\ifdefstring{\lang}{ro}{\newcommand{\tr}[3]{#1}}{%
+  \ifdefstring{\lang}{en}{\newcommand{\tr}[3]{#2}}{\newcommand{\tr}[3]{#3}}}
+
+% ---- page layout -------------------------------------------------------------
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{4pt}
+\setlist{itemsep=2pt,topsep=3pt,parsep=0pt}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[L]{\footnotesize\color{gray}%
+  \href{https://github.com/Mihai-Bogdan-Robert/resurse-matematica}{github.com/Mihai-Bogdan-Robert/resurse-matematica}}
+\fancyfoot[C]{\footnotesize\color{gray}\thepage}
+\fancyfoot[R]{\footnotesize\color{gray}\href{https://creativecommons.org/licenses/by-nc-nd/4.0/}{CC BY-NC-ND 4.0}\ \textcopyright{} 2025 Bogdan Mihai Robert}
+
+\titleformat{\section}{\Large\bfseries\color{accent}}{}{0pt}{}[\vspace{-2pt}{\color{accent}\titlerule}]
+\titleformat{\subsection}{\large\bfseries\color{accent}}{}{0pt}{}
+\titleformat{\subsubsection}{\normalsize\bfseries\itshape}{}{0pt}{}
+\titlespacing*{\section}{0pt}{14pt}{6pt}
+\titlespacing*{\subsection}{0pt}{10pt}{3pt}
+\titlespacing*{\subsubsection}{0pt}{6pt}{2pt}
+
+% ---- semantic boxes ----------------------------------------------------------
+\tcbset{boxstyle/.style={enhanced,breakable,boxrule=0.5pt,arc=2pt,
+  left=6pt,right=6pt,top=4pt,bottom=4pt,before skip=6pt,after skip=6pt}}
+% important (the "!!!" of the handwritten notes)
+\newtcolorbox{important}{boxstyle,colframe=warn,colback=warn!5,
+  coltitle=white,fonttitle=\bfseries\small,title={\tr{Important}{Important}{Wichtig}}}
+% remark / definition / theorem
+\newtcolorbox{remark}{boxstyle,colframe=accent!60,colback=soft}
+\newtcolorbox[]{theorem}[1]{boxstyle,colframe=accent,colback=white,
+  coltitle=white,fonttitle=\bfseries\small,title={#1}}
+
+% ---- topic title (standalone: big centred title; in the book: a chapter) -----
+\providecommand{\topictitle}[1]{%
+  \begin{center}{\LARGE\bfseries\itshape\color{accent} #1}\end{center}\vspace{-6pt}%
+  {\color{accent}\hrule height 0.8pt}\vspace{8pt}}
+
+% ---- notation shortcuts ------------------------------------------------------
+\newcommand{\dm}[1]{\ensuremath{\displaystyle #1}}          % inline, display-size
+\newcommand{\N}{\mathbb{N}}\newcommand{\Z}{\mathbb{Z}}\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}\newcommand{\C}{\mathbb{C}}
+\newcommand{\abs}[1]{\left|#1\right|}
+\newcommand{\vect}[1]{\overrightarrow{#1}}
+\newcommand{\imp}{\Rightarrow}
+\renewcommand{\epsilon}{\varepsilon}
+\renewcommand{\emptyset}{\varnothing}
+\newcommand{\cl}[1]{\widehat{#1}}                           % residue class in Z_n
+\newcommand{\transp}[1]{\tr{{}^{t}#1}{#1^{\mathsf T}}{#1^{\mathsf T}}}  % transpose
+% trigonometry: Romanian tg/ctg/arctg/arcctg  vs  international tan/cot/arctan/arccot
+\ifdefstring{\lang}{ro}{%
+  \DeclareMathOperator{\tg}{tg}\DeclareMathOperator{\ctg}{ctg}
+  \DeclareMathOperator{\arctg}{arctg}\DeclareMathOperator{\arcctg}{arcctg}}{%
+  \DeclareMathOperator{\tg}{tan}\DeclareMathOperator{\ctg}{cot}
+  \DeclareMathOperator{\arctg}{arctan}\DeclareMathOperator{\arcctg}{arccot}}
+\DeclareMathOperator{\Imf}{Im}
+\DeclareMathOperator{\Tr}{Tr}
+% combinatorics: Romanian C_n^k, A_n^k  vs  binomial / falling factorial
+\newcommand{\Comb}[2]{\tr{C_{#1}^{#2}}{\binom{#1}{#2}}{\binom{#1}{#2}}}
+\newcommand{\Arr}[2]{\tr{A_{#1}^{#2}}{\dfrac{#1!}{(#1-#2)!}}{\dfrac{#1!}{(#1-#2)!}}}
+% integer part: [x] in Romania, floor brackets elsewhere
+\newcommand{\ip}[1]{\tr{\left[#1\right]}{\left\lfloor #1\right\rfloor}{\left\lfloor #1\right\rfloor}}
+\newcommand{\fp}[1]{\left\{#1\right\}}
+% index ranges: \overline{0,n-1} (RO)  vs  {0,...,n-1}
+\newcommand{\rng}[2]{\tr{\overline{#1,#2}}{\{#1,\dots,#2\}}{\{#1,\dots,#2\}}}
+% a "ro/en/de" word inside math
+\newcommand{\mt}[3]{\text{\tr{#1}{#2}{#3}}}
+
+% ---- tidy lists of formulas ---------------------------------------------------
+\newenvironment{formulae}[1][2]{%
+  \begin{multicols}{#1}\begin{itemize}[label=\textbullet,itemsep=5pt,leftmargin=14pt]}{%
+  \end{itemize}\end{multicols}}
+
+% ---- progressions ------------------------------------------------------------
+\newcommand{\AP}{\tr{p.a.}{A.P.}{arithm. Folge}}
+\newcommand{\GP}{\tr{p.g.}{G.P.}{geom. Folge}}

@@ -1,0 +1,64 @@
+\topictitle{\tr{Legi de compoziție}{Binary operations}{Verknüpfungen}}
+
+\[
+\bigl(G,\ \text{``}-\text{''},\ \text{``}+\text{''},\ \text{``}\ast\text{''}\ \tr{sau}{or}{oder}\ \text{``}\circ\text{''}\bigr)
+\]
+\begin{enumerate}[label=\arabic*.,leftmargin=*]
+\item \textbf{\tr{Parte stabilă}{Closure}{Abgeschlossenheit}}
+  \[\forall x,y\in G\imp x\ast y\in G\]
+\item \textbf{\tr{Comutativitate}{Commutativity}{Kommutativität}}
+  \[x\ast y=y\ast x\qquad\forall x,y\in G\]
+\item \textbf{\tr{Asociativitate}{Associativity}{Assoziativität}}
+  \[(x\ast y)\ast z=x\ast(y\ast z)\qquad\forall x,y,z\in G\]
+  \emph{\tr{(La matrice rezultă din proprietatea înmulțirii matricelor.)}{(For matrices it follows from the associativity of matrix multiplication.)}{(Bei Matrizen folgt sie aus der Assoziativität der Matrizenmultiplikation.)}}
+\item \textbf{\tr{Element neutru}{Identity element}{Neutrales Element}}
+  \[\exists\,e\in G:\quad x\ast e=e\ast x=x\qquad\forall x\in G\]
+  \emph{\tr{(Dacă avem matrice, elementul neutru îl căutăm printre $I_n$.)}{(For matrices, look for the identity among $I_n$.)}{(Bei Matrizen sucht man das neutrale Element unter $I_n$.)}}
+\item \textbf{\tr{Elemente simetrizabile}{Invertible elements}{Inverse Elemente}}
+  \[\forall x\in G\ \exists\,x'\in G:\quad x\ast x'=x'\ast x=e\]
+  \emph{\tr{(Simetricul este unic.)}{(The inverse is unique.)}{(Das Inverse ist eindeutig.)}}
+\end{enumerate}
+
+\subsection{\tr{Structuri algebrice}{Algebraic structures}{Algebraische Strukturen}}
+\begin{description}[leftmargin=0pt,style=nextline]
+\item[\tr{Monoid}{Monoid}{Monoid}]
+  \tr{legea este \textcolor{accent}{asociativă}; $\exists$ \textcolor{accent}{element neutru}.}
+      {the operation is \textcolor{accent}{associative}; there is an \textcolor{accent}{identity element}.}
+      {die Verknüpfung ist \textcolor{accent}{assoziativ}; es gibt ein \textcolor{accent}{neutrales Element}.}
+\item[\tr{Grup}{Group}{Gruppe}]
+  \tr{legea este \textcolor{accent}{asociativă}; $\exists$ \textcolor{accent}{element neutru}; $\exists$ \textcolor{accent}{element simetrizabil}.}
+      {the operation is \textcolor{accent}{associative}; there is an \textcolor{accent}{identity element}; every element is \textcolor{accent}{invertible}.}
+      {die Verknüpfung ist \textcolor{accent}{assoziativ}; es gibt ein \textcolor{accent}{neutrales Element}; jedes Element ist \textcolor{accent}{invertierbar}.}
+\item[\tr{Grup abelian (grup comutativ)}{Abelian (commutative) group}{Abelsche (kommutative) Gruppe}]
+  \tr{legea este \textcolor{accent}{asociativă}, \textcolor{accent}{comutativă}; $\exists$ \textcolor{accent}{element neutru}; $\exists$ \textcolor{accent}{element simetrizabil}.}
+      {the operation is \textcolor{accent}{associative}, \textcolor{accent}{commutative}; there is an \textcolor{accent}{identity element}; every element is \textcolor{accent}{invertible}.}
+      {die Verknüpfung ist \textcolor{accent}{assoziativ}, \textcolor{accent}{kommutativ}; es gibt ein \textcolor{accent}{neutrales Element}; jedes Element ist \textcolor{accent}{invertierbar}.}
+\end{description}
+
+\subsection{\tr{Morfisme și izomorfisme}{Homomorphisms and isomorphisms}{Homomorphismen und Isomorphismen}}
+\[
+(G_1,\ast),\ (G_2,+):\quad f:G_1\to G_2\ \ \mt{morfism}{homomorphism}{Homomorphismus}\iff f(x\ast y)=f(x)+f(y)
+\]
+\tr{Un morfism bijectiv se numește izomorfism.}{A bijective homomorphism is called an isomorphism.}{Ein bijektiver Homomorphismus heißt Isomorphismus.}
+
+\subsection{\tr{Tabla unei legi de compoziție}{Operation table}{Verknüpfungstafel}}
+\begin{center}
+\renewcommand{\arraystretch}{1.6}
+\begin{tabular}{c|cccc}
+$\ast$ & $a_1$ & $a_2$ & $\cdots$ & $a_n$\\ \hline
+$a_1$ & & & & \\
+$a_2$ & & & $a_2\ast a_j$ & \\
+$\vdots$ & & & & \\
+$a_n$ & & & &
+\end{tabular}
+\end{center}
+\tr{(rând = primul element, coloană = al doilea element)}{(row = first element, column = second element)}{(Zeile = erstes Element, Spalte = zweites Element)}
+
+\subsubsection{\tr{Concluzii din tablă}{What the table tells you}{Was man aus der Tafel abliest}}
+\begin{itemize}[label=$\blacktriangleright$]
+\item \textit{\tr{Parte stabilă:}{Closure:}{Abgeschlossenheit:}} \tr{toate rezultatele din tablă sunt elemente ale lui $G$.}{all entries of the table are elements of $G$.}{alle Einträge der Tafel liegen in $G$.}
+\item \textit{\tr{Comutativitate:}{Commutativity:}{Kommutativität:}} \tr{tabla este simetrică față de diagonala principală.}{the table is symmetric about the main diagonal.}{die Tafel ist symmetrisch zur Hauptdiagonalen.}
+\item \textit{\tr{Element neutru:}{Identity element:}{Neutrales Element:}} \tr{acolo unde linia $a_1,a_2,\dots,a_n$ se regăsește în tablă (și coloana la fel).}{the row (and the column) that reproduces $a_1,a_2,\dots,a_n$.}{die Zeile (und Spalte), die $a_1,a_2,\dots,a_n$ unverändert wiedergibt.}
+\item \textit{\tr{Element simetrizabil:}{Invertible element:}{Inverses Element:}} \tr{dacă găsim pe linia lui $a_i$ elementul neutru.}{if the identity element appears in the row of $a_i$.}{wenn in der Zeile von $a_i$ das neutrale Element vorkommt.}
+\item \textit{\tr{Asociativitatea}{Associativity}{Assoziativität}} \tr{nu se vede din tablă; se verifică separat.}{cannot be read off the table; check it separately.}{lässt sich nicht aus der Tafel ablesen; separat prüfen.}
+\end{itemize}
