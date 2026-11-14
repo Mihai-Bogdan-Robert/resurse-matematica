@@ -14,9 +14,9 @@ The complete book (all topics, with table of contents):
 
 | Language | PDF |
 |---|---|
-| Română | [Resurse_Matematica.pdf](pdf/ro/Resurse_Matematica.pdf) |
-| English | [Math_Resources.pdf](pdf/en/Math_Resources.pdf) |
-| Deutsch | [Mathe_Formelsammlung.pdf](pdf/de/Mathe_Formelsammlung.pdf) |
+| Română | [Resurse_Matematica.pdf](ro/Resurse_Matematica.pdf) |
+| English | [Math_Resources.pdf](en/Math_Resources.pdf) |
+| Deutsch | [Mathe_Formelsammlung.pdf](de/Mathe_Formelsammlung.pdf) |
 
 Or topic by topic (each PDF is 1–3 pages, print-friendly):
 
@@ -24,55 +24,55 @@ Or topic by topic (each PDF is 1–3 pages, print-friendly):
 
 | Topic | RO | EN | DE |
 |---|:-:|:-:|:-:|
-| Matrices | [PDF](pdf/ro/01_Algebra/Matrice.pdf) | [PDF](pdf/en/01_Algebra/Matrices.pdf) | [PDF](pdf/de/01_Algebra/Matrizen.pdf) |
-| Absolute value | [PDF](pdf/ro/01_Algebra/Modulul.pdf) | [PDF](pdf/en/01_Algebra/Absolute_value.pdf) | [PDF](pdf/de/01_Algebra/Betrag.pdf) |
-| Complex numbers | [PDF](pdf/ro/01_Algebra/Numere_complexe.pdf) | [PDF](pdf/en/01_Algebra/Complex_numbers.pdf) | [PDF](pdf/de/01_Algebra/Komplexe_Zahlen.pdf) |
-| Progressions | [PDF](pdf/ro/01_Algebra/Progresii.pdf) | [PDF](pdf/en/01_Algebra/Progressions.pdf) | [PDF](pdf/de/01_Algebra/Folgen_und_Reihen.pdf) |
-| Systems of equations in ℤₙ | [PDF](pdf/ro/01_Algebra/Sisteme_ecuatii_in_Zn.pdf) | [PDF](pdf/en/01_Algebra/Systems_of_equations_in_Zn.pdf) | [PDF](pdf/de/01_Algebra/Gleichungssysteme_in_Zn.pdf) |
+| Matrices | [PDF](ro/01_Algebra/Matrice.pdf) | [PDF](en/01_Algebra/Matrices.pdf) | [PDF](de/01_Algebra/Matrizen.pdf) |
+| Absolute value | [PDF](ro/01_Algebra/Modulul.pdf) | [PDF](en/01_Algebra/Absolute_value.pdf) | [PDF](de/01_Algebra/Betrag.pdf) |
+| Complex numbers | [PDF](ro/01_Algebra/Numere_complexe.pdf) | [PDF](en/01_Algebra/Complex_numbers.pdf) | [PDF](de/01_Algebra/Komplexe_Zahlen.pdf) |
+| Progressions | [PDF](ro/01_Algebra/Progresii.pdf) | [PDF](en/01_Algebra/Progressions.pdf) | [PDF](de/01_Algebra/Folgen_und_Reihen.pdf) |
+| Systems of equations in ℤₙ | [PDF](ro/01_Algebra/Sisteme_ecuatii_in_Zn.pdf) | [PDF](en/01_Algebra/Systems_of_equations_in_Zn.pdf) | [PDF](de/01_Algebra/Gleichungssysteme_in_Zn.pdf) |
 
 ### Functions
 
 | Topic | RO | EN | DE |
 |---|:-:|:-:|:-:|
-| Function composition | [PDF](pdf/ro/02_Functii/Compunerea_functiilor.pdf) | [PDF](pdf/en/02_Functions/Function_composition.pdf) | [PDF](pdf/de/02_Funktionen/Verkettung_von_Funktionen.pdf) |
-| Quadratic function | [PDF](pdf/ro/02_Functii/Functia_de_gradul_doi.pdf) | [PDF](pdf/en/02_Functions/Quadratic_function.pdf) | [PDF](pdf/de/02_Funktionen/Quadratische_Funktion.pdf) |
-| Injective & surjective functions | [PDF](pdf/ro/02_Functii/Functii_surjective_injective.pdf) | [PDF](pdf/en/02_Functions/Injective_and_surjective_functions.pdf) | [PDF](pdf/de/02_Funktionen/Injektive_und_surjektive_Funktionen.pdf) |
-| Binary operations | [PDF](pdf/ro/02_Functii/Legi_de_compozitie.pdf) | [PDF](pdf/en/02_Functions/Binary_operations.pdf) | [PDF](pdf/de/02_Funktionen/Verknuepfungen.pdf) |
+| Function composition | [PDF](ro/02_Functii/Compunerea_functiilor.pdf) | [PDF](en/02_Functions/Function_composition.pdf) | [PDF](de/02_Funktionen/Verkettung_von_Funktionen.pdf) |
+| Quadratic function | [PDF](ro/02_Functii/Functia_de_gradul_doi.pdf) | [PDF](en/02_Functions/Quadratic_function.pdf) | [PDF](de/02_Funktionen/Quadratische_Funktion.pdf) |
+| Injective & surjective functions | [PDF](ro/02_Functii/Functii_surjective_injective.pdf) | [PDF](en/02_Functions/Injective_and_surjective_functions.pdf) | [PDF](de/02_Funktionen/Injektive_und_surjektive_Funktionen.pdf) |
+| Binary operations | [PDF](ro/02_Functii/Legi_de_compozitie.pdf) | [PDF](en/02_Functions/Binary_operations.pdf) | [PDF](de/02_Funktionen/Verknuepfungen.pdf) |
 
 ### Calculus & analysis
 
 | Topic | RO | EN | DE |
 |---|:-:|:-:|:-:|
-| Asymptotes | [PDF](pdf/ro/03_Analiza/Asimptote.pdf) | [PDF](pdf/en/03_Calculus/Asymptotes.pdf) | [PDF](pdf/de/03_Analysis/Asymptoten.pdf) |
-| Continuity & differentiability | [PDF](pdf/ro/03_Analiza/Derivare.pdf) | [PDF](pdf/en/03_Calculus/Derivatives.pdf) | [PDF](pdf/de/03_Analysis/Ableitungen.pdf) |
-| Exponential equations | [PDF](pdf/ro/03_Analiza/Ecuatii_exponentiale.pdf) | [PDF](pdf/en/03_Calculus/Exponential_equations.pdf) | [PDF](pdf/de/03_Analysis/Exponentialgleichungen.pdf) |
-| Irrational equations | [PDF](pdf/ro/03_Analiza/Ecuatii_irationale.pdf) | [PDF](pdf/en/03_Calculus/Irrational_equations.pdf) | [PDF](pdf/de/03_Analysis/Wurzelgleichungen.pdf) |
-| Logarithmic equations | [PDF](pdf/ro/03_Analiza/Ecuatii_logaritmice.pdf) | [PDF](pdf/en/03_Calculus/Logarithmic_equations.pdf) | [PDF](pdf/de/03_Analysis/Logarithmusgleichungen.pdf) |
-| Trigonometric equations | [PDF](pdf/ro/03_Analiza/Ecuatii_trigonometrice.pdf) | [PDF](pdf/en/03_Calculus/Trigonometric_equations.pdf) | [PDF](pdf/de/03_Analysis/Trigonometrische_Gleichungen.pdf) |
-| Integrals | [PDF](pdf/ro/03_Analiza/Integrare.pdf) | [PDF](pdf/en/03_Calculus/Integration.pdf) | [PDF](pdf/de/03_Analysis/Integration.pdf) |
-| Limits | [PDF](pdf/ro/03_Analiza/Limite.pdf) | [PDF](pdf/en/03_Calculus/Limits.pdf) | [PDF](pdf/de/03_Analysis/Grenzwerte.pdf) |
+| Asymptotes | [PDF](ro/03_Analiza/Asimptote.pdf) | [PDF](en/03_Calculus/Asymptotes.pdf) | [PDF](de/03_Analysis/Asymptoten.pdf) |
+| Continuity & differentiability | [PDF](ro/03_Analiza/Derivare.pdf) | [PDF](en/03_Calculus/Derivatives.pdf) | [PDF](de/03_Analysis/Ableitungen.pdf) |
+| Exponential equations | [PDF](ro/03_Analiza/Ecuatii_exponentiale.pdf) | [PDF](en/03_Calculus/Exponential_equations.pdf) | [PDF](de/03_Analysis/Exponentialgleichungen.pdf) |
+| Irrational equations | [PDF](ro/03_Analiza/Ecuatii_irationale.pdf) | [PDF](en/03_Calculus/Irrational_equations.pdf) | [PDF](de/03_Analysis/Wurzelgleichungen.pdf) |
+| Logarithmic equations | [PDF](ro/03_Analiza/Ecuatii_logaritmice.pdf) | [PDF](en/03_Calculus/Logarithmic_equations.pdf) | [PDF](de/03_Analysis/Logarithmusgleichungen.pdf) |
+| Trigonometric equations | [PDF](ro/03_Analiza/Ecuatii_trigonometrice.pdf) | [PDF](en/03_Calculus/Trigonometric_equations.pdf) | [PDF](de/03_Analysis/Trigonometrische_Gleichungen.pdf) |
+| Integrals | [PDF](ro/03_Analiza/Integrare.pdf) | [PDF](en/03_Calculus/Integration.pdf) | [PDF](de/03_Analysis/Integration.pdf) |
+| Limits | [PDF](ro/03_Analiza/Limite.pdf) | [PDF](en/03_Calculus/Limits.pdf) | [PDF](de/03_Analysis/Grenzwerte.pdf) |
 
 ### Geometry
 
 | Topic | RO | EN | DE |
 |---|:-:|:-:|:-:|
-| Lines in the plane | [PDF](pdf/ro/04_Geometrie/Drepte_in_plan.pdf) | [PDF](pdf/en/04_Geometry/Lines_in_the_plane.pdf) | [PDF](pdf/de/04_Geometrie/Geraden_in_der_Ebene.pdf) |
-| Floor & fractional part | [PDF](pdf/ro/04_Geometrie/Parte_intreaga.pdf) | [PDF](pdf/en/04_Geometry/Floor_and_fractional_part.pdf) | [PDF](pdf/de/04_Geometrie/Gaussklammer.pdf) |
-| Vectors in the plane | [PDF](pdf/ro/04_Geometrie/Vectori_in_plan.pdf) | [PDF](pdf/en/04_Geometry/Vectors_in_the_plane.pdf) | [PDF](pdf/de/04_Geometrie/Vektoren_in_der_Ebene.pdf) |
+| Lines in the plane | [PDF](ro/04_Geometrie/Drepte_in_plan.pdf) | [PDF](en/04_Geometry/Lines_in_the_plane.pdf) | [PDF](de/04_Geometrie/Geraden_in_der_Ebene.pdf) |
+| Floor & fractional part | [PDF](ro/04_Geometrie/Parte_intreaga.pdf) | [PDF](en/04_Geometry/Floor_and_fractional_part.pdf) | [PDF](de/04_Geometrie/Gaussklammer.pdf) |
+| Vectors in the plane | [PDF](ro/04_Geometrie/Vectori_in_plan.pdf) | [PDF](en/04_Geometry/Vectors_in_the_plane.pdf) | [PDF](de/04_Geometrie/Vektoren_in_der_Ebene.pdf) |
 
 ### Combinatorics
 
 | Topic | RO | EN | DE |
 |---|:-:|:-:|:-:|
-| Combinatorics | [PDF](pdf/ro/05_Combinatorica/Combinatorica.pdf) | [PDF](pdf/en/05_Combinatorics/Combinatorics.pdf) | [PDF](pdf/de/05_Kombinatorik/Kombinatorik.pdf) |
-| Mathematical induction | [PDF](pdf/ro/05_Combinatorica/Inductie.pdf) | [PDF](pdf/en/05_Combinatorics/Mathematical_induction.pdf) | [PDF](pdf/de/05_Kombinatorik/Vollstaendige_Induktion.pdf) |
+| Combinatorics | [PDF](ro/05_Combinatorica/Combinatorica.pdf) | [PDF](en/05_Combinatorics/Combinatorics.pdf) | [PDF](de/05_Kombinatorik/Kombinatorik.pdf) |
+| Mathematical induction | [PDF](ro/05_Combinatorica/Inductie.pdf) | [PDF](en/05_Combinatorics/Mathematical_induction.pdf) | [PDF](de/05_Kombinatorik/Vollstaendige_Induktion.pdf) |
 
 ## 🗂️ Repository layout
 
 ```
 src/<chapter>/<topic>.tex  LaTeX source of each topic (all three languages in one file)
 common/preamble.tex        packages, styles and notation macros
-pdf/{ro,en,de}/           generated PDFs
+{ro,en,de}/               generated PDFs
 build.py                   builds everything
 ```
 

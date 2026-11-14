@@ -6,7 +6,7 @@
     python3 build.py --lang en    # only one language
 
 Requires XeLaTeX (TeX Live / MacTeX) and `pdfunite` (poppler) for the books.
-The LaTeX sources live in src/, the results are written to pdf/<lang>/.
+The LaTeX sources live in src/, the results are written to <lang>/.
 """
 import argparse
 import pathlib
@@ -119,7 +119,7 @@ def build_topics(langs, pattern):
                     print(f"[skip] {lang}/{tid}: no source yet")
                     continue
                 pdf = run_xelatex(topic_source(lang, chapter, tid), f"{lang}_{tid}", pathlib.Path(tmp) / lang)
-                dest_dir = ROOT / "pdf" / lang / CHAPTERS[chapter][lang]
+                dest_dir = ROOT / lang / CHAPTERS[chapter][lang]
                 dest_dir.mkdir(parents=True, exist_ok=True)
                 dest = dest_dir / f"{names[lang]}.pdf"
                 shutil.copyfile(pdf, dest)
@@ -172,7 +172,7 @@ def build_books(langs):
     with tempfile.TemporaryDirectory() as tmp:
         for lang in langs:
             pdf = run_xelatex(book_source(lang), f"book_{lang}", pathlib.Path(tmp) / lang)
-            dest = ROOT / "pdf" / lang / f"{BOOK_NAME[lang]}.pdf"
+            dest = ROOT / lang / f"{BOOK_NAME[lang]}.pdf"
             dest.parent.mkdir(parents=True, exist_ok=True)
             shutil.copyfile(pdf, dest)
             print(f"[ok]   {dest.relative_to(ROOT)}")
